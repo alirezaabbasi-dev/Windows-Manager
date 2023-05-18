@@ -243,22 +243,6 @@ namespace YP_Windows_Manager_Computer_
             }
         }
 
-
-
-        /* private void radTextBox1_Enter(object sender, EventArgs e)
-         {
-           //  System.Diagnostics.Process.Start("iexplore.exe", "https://" + radTextBox1.Text);
-         }*/
-
-        /*  private void radTextBox1_KeyPress(object sender, KeyPressEventArgs e)
-          {
-              System.Diagnostics.Process.Start("iexplore.exe", "https://" + radTextBox1.Text);
-          }
-
-          private void radTextBox1_KeyDown(object sender, KeyEventArgs e)
-          {
-
-          }*/
     }
 }
 
