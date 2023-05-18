@@ -104,7 +104,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_system_task_961;
+            this.pictureBox1.Image =    global::YP_Windows_Manager.Properties.Resources.icons8_system_task_961;
             this.pictureBox1.Location = new System.Drawing.Point(12, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(488, 104);

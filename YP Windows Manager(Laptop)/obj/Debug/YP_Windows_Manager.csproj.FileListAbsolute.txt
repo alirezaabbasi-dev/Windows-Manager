@@ -1,0 +1,34 @@
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroTouch.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\TelerikCommon.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.WM.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.Form2.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.Form3.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.Form4.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.Form5.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.Form6.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.waitfrm.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.GenerateResource.cache
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.CopyComplete
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.Properties.Resources.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager.exe.licenses
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager.exe.config
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager.exe
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager.pdb
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager.exe
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager.pdb
