@@ -1,16 +1,9 @@
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.RichTextEditor.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroTouch.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
-C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\TelerikCommon.dll
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager.csproj.AssemblyReference.cache
