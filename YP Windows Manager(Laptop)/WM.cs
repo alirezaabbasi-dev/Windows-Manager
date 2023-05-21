@@ -32,7 +32,7 @@ namespace YP_Windows_Manager_Computer_
         private void Form1_Load(object sender, EventArgs e)
         {
             GetInstalledPrinters();
-
+            this.Text = "YP WM (Beta)";
             this.ThemeName = fluentTheme1.ThemeName;
             radPanel1.ThemeName = fluentTheme1.ThemeName;
             radPanel2.ThemeName = fluentTheme1.ThemeName;
