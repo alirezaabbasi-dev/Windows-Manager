@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YP_Windows_Manager_Computer_", "YP Windows Manager(Laptop)\YP_Windows_Manager_Computer_.csproj", "{010EC58C-F8F0-4016-87C9-06F870890E9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YP_Windows_Manager", "YP Windows Manager(Laptop)\YP_Windows_Manager.csproj", "{010EC58C-F8F0-4016-87C9-06F870890E9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

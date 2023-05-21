@@ -31,17 +31,9 @@
             this.components = new System.ComponentModel.Container();
             Telerik.WinControls.UI.ListViewDataItem listViewDataItem1 = new Telerik.WinControls.UI.ListViewDataItem("Printers:");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WM));
-            this.windows8Theme1 = new Telerik.WinControls.Themes.Windows8Theme();
-            this.windows7Theme1 = new Telerik.WinControls.Themes.Windows7Theme();
-            this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
-            this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
             this.telerikMetroBlueTheme1 = new Telerik.WinControls.Themes.TelerikMetroBlueTheme();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
-            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
-            this.breezeTheme1 = new Telerik.WinControls.Themes.BreezeTheme();
-            this.aquaTheme1 = new Telerik.WinControls.Themes.AquaTheme();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
-            this.fluentDarkTheme2 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radButton4 = new Telerik.WinControls.UI.RadButton();
@@ -56,7 +48,7 @@
             this.radButton14 = new Telerik.WinControls.UI.RadButton();
             this.radButton9 = new Telerik.WinControls.UI.RadButton();
             this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
-            this.listBox1 = new Telerik.WinControls.UI.RadListView();
+            this.printersList = new Telerik.WinControls.UI.RadListView();
             this.radButton10 = new Telerik.WinControls.UI.RadButton();
             this.radButton6 = new Telerik.WinControls.UI.RadButton();
             this.radButton8 = new Telerik.WinControls.UI.RadButton();
@@ -65,8 +57,9 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.radButton15 = new Telerik.WinControls.UI.RadButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.crystalTheme1 = new Telerik.WinControls.Themes.CrystalTheme();
             this.tmrh = new System.Windows.Forms.Timer(this.components);
+            this.fluentDarkTheme2 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
@@ -86,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
             this.radPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.printersList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
@@ -129,7 +122,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_exit_button_961;
+            this.radButton1.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_button_961;
             this.radButton1.Location = new System.Drawing.Point(17, 16);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(182, 64);
@@ -145,7 +138,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton4.ForeColor = System.Drawing.Color.Black;
-            this.radButton4.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_reset_96__1_;
+            this.radButton4.Image = global::YP_Windows_Manager.Properties.Resources.icons8_reset_96__1_;
             this.radButton4.Location = new System.Drawing.Point(205, 16);
             this.radButton4.Name = "radButton4";
             this.radButton4.Size = new System.Drawing.Size(182, 64);
@@ -161,7 +154,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton2.ForeColor = System.Drawing.Color.Black;
-            this.radButton2.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_exit_96;
+            this.radButton2.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_96;
             this.radButton2.Location = new System.Drawing.Point(17, 86);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(182, 64);
@@ -176,7 +169,7 @@
             this.radButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton3.ForeColor = System.Drawing.Color.Black;
-            this.radButton3.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_unavailable_96;
+            this.radButton3.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
             this.radButton3.Location = new System.Drawing.Point(205, 86);
             this.radButton3.Name = "radButton3";
             this.radButton3.Size = new System.Drawing.Size(182, 64);
@@ -204,7 +197,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton13.ForeColor = System.Drawing.Color.Black;
-            this.radButton13.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_website_96__1_;
+            this.radButton13.Image = global::YP_Windows_Manager.Properties.Resources.icons8_website_96__1_;
             this.radButton13.Location = new System.Drawing.Point(210, 54);
             this.radButton13.Name = "radButton13";
             this.radButton13.Size = new System.Drawing.Size(182, 42);
@@ -220,7 +213,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton7.ForeColor = System.Drawing.Color.Black;
-            this.radButton7.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_home_96__1_;
+            this.radButton7.Image = global::YP_Windows_Manager.Properties.Resources.icons8_home_96__1_;
             this.radButton7.Location = new System.Drawing.Point(22, 54);
             this.radButton7.Name = "radButton7";
             this.radButton7.Size = new System.Drawing.Size(182, 42);
@@ -249,7 +242,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton11.ForeColor = System.Drawing.Color.Black;
-            this.radButton11.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_refresh_96;
+            this.radButton11.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
             this.radButton11.Location = new System.Drawing.Point(22, 12);
             this.radButton11.Name = "radButton11";
             this.radButton11.Size = new System.Drawing.Size(182, 52);
@@ -264,7 +257,7 @@
             this.radButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.radButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton12.ForeColor = System.Drawing.Color.Black;
-            this.radButton12.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_system_information_96__1_;
+            this.radButton12.Image = global::YP_Windows_Manager.Properties.Resources.icons8_system_information_96__1_;
             this.radButton12.Location = new System.Drawing.Point(22, 70);
             this.radButton12.Name = "radButton12";
             this.radButton12.Size = new System.Drawing.Size(182, 52);
@@ -280,7 +273,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton14.ForeColor = System.Drawing.Color.Black;
-            this.radButton14.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_about_96__2_;
+            this.radButton14.Image = global::YP_Windows_Manager.Properties.Resources.icons8_about_96__2_;
             this.radButton14.Location = new System.Drawing.Point(210, 70);
             this.radButton14.Name = "radButton14";
             this.radButton14.Size = new System.Drawing.Size(182, 52);
@@ -295,7 +288,7 @@
             this.radButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton9.ForeColor = System.Drawing.Color.Black;
-            this.radButton9.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_processor_96__1_;
+            this.radButton9.Image = global::YP_Windows_Manager.Properties.Resources.icons8_processor_96__1_;
             this.radButton9.Location = new System.Drawing.Point(210, 12);
             this.radButton9.Name = "radButton9";
             this.radButton9.Size = new System.Drawing.Size(182, 52);
@@ -310,7 +303,7 @@
             this.radPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radPanel4.Controls.Add(this.listBox1);
+            this.radPanel4.Controls.Add(this.printersList);
             this.radPanel4.Controls.Add(this.radButton10);
             this.radPanel4.Controls.Add(this.radButton6);
             this.radPanel4.Controls.Add(this.radButton8);
@@ -322,19 +315,20 @@
             this.radPanel4.TabIndex = 3;
             this.radPanel4.ThemeName = "VisualStudio2012Dark";
             // 
-            // listBox1
+            // printersList
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.printersList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             listViewDataItem1.Text = "Printers:";
-            this.listBox1.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
+            this.printersList.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
             listViewDataItem1});
-            this.listBox1.Location = new System.Drawing.Point(3, 160);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(368, 277);
-            this.listBox1.TabIndex = 5;
-            this.listBox1.ThemeName = "TelerikMetroBlue";
+            this.printersList.Location = new System.Drawing.Point(3, 160);
+            this.printersList.Name = "printersList";
+            this.printersList.Size = new System.Drawing.Size(368, 277);
+            this.printersList.TabIndex = 5;
+            this.printersList.ThemeName = "TelerikMetroBlue";
+            this.printersList.SelectedItemChanged += new System.EventHandler(this.printersList_SelectedItemChanged);
             // 
             // radButton10
             // 
@@ -342,7 +336,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton10.ForeColor = System.Drawing.Color.Black;
-            this.radButton10.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_gears_96;
+            this.radButton10.Image = global::YP_Windows_Manager.Properties.Resources.icons8_gears_96;
             this.radButton10.Location = new System.Drawing.Point(189, 112);
             this.radButton10.Name = "radButton10";
             this.radButton10.Size = new System.Drawing.Size(182, 42);
@@ -356,7 +350,7 @@
             // 
             this.radButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton6.ForeColor = System.Drawing.Color.Black;
-            this.radButton6.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_recycle_bin_96;
+            this.radButton6.Image = global::YP_Windows_Manager.Properties.Resources.icons8_recycle_bin_96;
             this.radButton6.Location = new System.Drawing.Point(3, 64);
             this.radButton6.Name = "radButton6";
             this.radButton6.Size = new System.Drawing.Size(182, 42);
@@ -371,7 +365,7 @@
             this.radButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton8.ForeColor = System.Drawing.Color.Black;
-            this.radButton8.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_disconnected_96;
+            this.radButton8.Image = global::YP_Windows_Manager.Properties.Resources.icons8_disconnected_96;
             this.radButton8.Location = new System.Drawing.Point(189, 64);
             this.radButton8.Name = "radButton8";
             this.radButton8.Size = new System.Drawing.Size(182, 42);
@@ -387,7 +381,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton16.ForeColor = System.Drawing.Color.Black;
-            this.radButton16.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_cd_96;
+            this.radButton16.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96;
             this.radButton16.Location = new System.Drawing.Point(189, 16);
             this.radButton16.Name = "radButton16";
             this.radButton16.Size = new System.Drawing.Size(182, 42);
@@ -402,7 +396,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton5.ForeColor = System.Drawing.Color.Black;
-            this.radButton5.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_cd_96__1_1;
+            this.radButton5.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96__1_1;
             this.radButton5.Location = new System.Drawing.Point(3, 16);
             this.radButton5.Name = "radButton5";
             this.radButton5.Size = new System.Drawing.Size(182, 42);
@@ -418,7 +412,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton15.ForeColor = System.Drawing.Color.Black;
-            this.radButton15.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_control_panel_program_961;
+            this.radButton15.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
             this.radButton15.Location = new System.Drawing.Point(441, 122);
             this.radButton15.Name = "radButton15";
             this.radButton15.Size = new System.Drawing.Size(182, 42);
@@ -458,7 +452,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YP Windows Manager (Computer)";
+            this.Text = "YP Windows Manager";
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -482,7 +476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
             this.radPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.listBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.printersList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
@@ -495,16 +489,8 @@
         }
 
         #endregion
-
-        private Telerik.WinControls.Themes.Windows8Theme windows8Theme1;
-        private Telerik.WinControls.Themes.Windows7Theme windows7Theme1;
-        private Telerik.WinControls.Themes.VisualStudio2012LightTheme visualStudio2012LightTheme1;
-        private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
         private Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme1;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
-        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
-        private Telerik.WinControls.Themes.BreezeTheme breezeTheme1;
-        private Telerik.WinControls.Themes.AquaTheme aquaTheme1;
         private Telerik.WinControls.UI.RadButton radButton1;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.UI.RadButton radButton3;
@@ -516,7 +502,6 @@
         private Telerik.WinControls.UI.RadButton radButton8;
         private Telerik.WinControls.UI.RadButton radButton9;
         private Telerik.WinControls.UI.RadButton radButton10;
-        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme2;
         private Telerik.WinControls.UI.RadButton radButton11;
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadButton radButton12;
@@ -528,10 +513,11 @@
         private Telerik.WinControls.UI.RadButton radButton15;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
-        private Telerik.WinControls.UI.RadListView listBox1;
+        private Telerik.WinControls.UI.RadListView printersList;
         private Telerik.WinControls.UI.RadButton radButton16;
-        private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
         private System.Windows.Forms.Timer tmrh;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme2;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
     }
 }
 

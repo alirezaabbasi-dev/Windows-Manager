@@ -42,21 +42,21 @@ namespace YP_Windows_Manager_Computer_
         }
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath,
-    RecycleFlags dwFlags);
+          RecycleFlags dwFlags);
         private void RadButton1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/s");
+            System.Diagnostics.Process.Start("ShutDown", "/s /t 60");
         }
 
         private void RadButton2_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/l");
+            System.Diagnostics.Process.Start("ShutDown", "/l /t 60");
             HelpButton.ToString();
         }
 
         private void RadButton4_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/r");
+            System.Diagnostics.Process.Start("ShutDown", "/r /t 60");
         }
 
         private void RadButton3_Click(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace YP_Windows_Manager_Computer_
         private void GetInstalledPrinters()
         {
             foreach (string printerName in PrinterSettings.InstalledPrinters)
-                listBox1.Items.Add(printerName);
+                printersList.Items.Add(printerName);
         }
 
         private void RadButton12_Click(object sender, EventArgs e)
@@ -243,24 +243,13 @@ namespace YP_Windows_Manager_Computer_
             }
         }
 
+        private void printersList_SelectedItemChanged(object sender, EventArgs e)
+        {
 
-
-        /* private void radTextBox1_Enter(object sender, EventArgs e)
-         {
-           //  System.Diagnostics.Process.Start("iexplore.exe", "https://" + radTextBox1.Text);
-         }*/
-
-        /*  private void radTextBox1_KeyPress(object sender, KeyPressEventArgs e)
-          {
-              System.Diagnostics.Process.Start("iexplore.exe", "https://" + radTextBox1.Text);
-          }
-
-          private void radTextBox1_KeyDown(object sender, KeyEventArgs e)
-          {
-
-          }*/
+        }
     }
 }
 
 
 
+ 

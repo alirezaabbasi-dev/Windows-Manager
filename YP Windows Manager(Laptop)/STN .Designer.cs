@@ -41,7 +41,7 @@
             // 
             this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton2.ForeColor = System.Drawing.Color.Black;
-            this.radButton2.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_pause_96;
+            this.radButton2.Image = global::YP_Windows_Manager.Properties.Resources.icons8_pause_96;
             this.radButton2.Location = new System.Drawing.Point(269, 12);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(251, 101);
@@ -54,7 +54,7 @@
             // 
             this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Image = global::YP_Windows_Manager_Computer_.Properties.Resources.icons8_play_96;
+            this.radButton1.Image = global::YP_Windows_Manager.Properties.Resources.icons8_play_96;
             this.radButton1.Location = new System.Drawing.Point(12, 12);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(251, 101);
