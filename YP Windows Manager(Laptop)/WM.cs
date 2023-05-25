@@ -15,8 +15,6 @@ namespace YP_Windows_Manager_Computer_
     public partial class WM : Telerik.WinControls.UI.RadForm
     {
         //startup
-
-        //
         enum RecycleFlags : uint
         {
             SHERB_NOCONFIRMATION = 0x00000001,
@@ -25,7 +23,7 @@ namespace YP_Windows_Manager_Computer_
         }
         public WM()
         {
-//reg.SetValue("Startup", Application.ExecutablePath.ToString());
+          
             InitializeComponent();
         }
 
@@ -38,6 +36,11 @@ namespace YP_Windows_Manager_Computer_
             radPanel2.ThemeName = fluentTheme1.ThemeName;
             radPanel3.ThemeName = fluentTheme1.ThemeName;
             radPanel4.ThemeName = fluentTheme1.ThemeName;
+
+            PowerStatus powerStatus = SystemInformation.PowerStatus;
+            int batteryLevel = (int)(powerStatus.BatteryLifePercent* 100);
+            bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
+
 
         }
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
@@ -75,10 +78,6 @@ namespace YP_Windows_Manager_Computer_
             int ret = MciSendString("set cdaudio door open", null, 0, IntPtr.Zero);
         }
 
-        private void RadButton16_Click(object sender, EventArgs e)
-        {
-            int ret = MciSendString("set cdaudio door closed", null, 0, IntPtr.Zero);
-        }
         private void RadButton6_Click(object sender, EventArgs e)
         {
             uint result = SHEmptyRecycleBin(IntPtr.Zero, null, 0);
@@ -244,6 +243,11 @@ namespace YP_Windows_Manager_Computer_
         }
 
         private void printersList_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

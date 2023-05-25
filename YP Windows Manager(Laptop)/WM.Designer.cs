@@ -52,7 +52,6 @@
             this.radButton10 = new Telerik.WinControls.UI.RadButton();
             this.radButton6 = new Telerik.WinControls.UI.RadButton();
             this.radButton8 = new Telerik.WinControls.UI.RadButton();
-            this.radButton16 = new Telerik.WinControls.UI.RadButton();
             this.radButton5 = new Telerik.WinControls.UI.RadButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.radButton15 = new Telerik.WinControls.UI.RadButton();
@@ -60,6 +59,7 @@
             this.tmrh = new System.Windows.Forms.Timer(this.components);
             this.fluentDarkTheme2 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            this.bChargeInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
@@ -83,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -106,6 +105,7 @@
             // 
             this.radPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.radPanel1.Controls.Add(this.bChargeInfo);
             this.radPanel1.Controls.Add(this.radButton1);
             this.radPanel1.Controls.Add(this.radButton4);
             this.radPanel1.Controls.Add(this.radButton2);
@@ -307,7 +307,6 @@
             this.radPanel4.Controls.Add(this.radButton10);
             this.radPanel4.Controls.Add(this.radButton6);
             this.radPanel4.Controls.Add(this.radButton8);
-            this.radPanel4.Controls.Add(this.radButton16);
             this.radPanel4.Controls.Add(this.radButton5);
             this.radPanel4.Location = new System.Drawing.Point(438, 10);
             this.radPanel4.Name = "radPanel4";
@@ -337,9 +336,9 @@
             this.radButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton10.ForeColor = System.Drawing.Color.Black;
             this.radButton10.Image = global::YP_Windows_Manager.Properties.Resources.icons8_gears_96;
-            this.radButton10.Location = new System.Drawing.Point(189, 112);
+            this.radButton10.Location = new System.Drawing.Point(3, 112);
             this.radButton10.Name = "radButton10";
-            this.radButton10.Size = new System.Drawing.Size(182, 42);
+            this.radButton10.Size = new System.Drawing.Size(368, 42);
             this.radButton10.TabIndex = 4;
             this.radButton10.Text = "Application Settings";
             this.radButton10.ThemeName = "FluentDark";
@@ -351,7 +350,7 @@
             this.radButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton6.ForeColor = System.Drawing.Color.Black;
             this.radButton6.Image = global::YP_Windows_Manager.Properties.Resources.icons8_recycle_bin_96;
-            this.radButton6.Location = new System.Drawing.Point(3, 64);
+            this.radButton6.Location = new System.Drawing.Point(3, 63);
             this.radButton6.Name = "radButton6";
             this.radButton6.Size = new System.Drawing.Size(182, 42);
             this.radButton6.TabIndex = 2;
@@ -366,7 +365,7 @@
             this.radButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton8.ForeColor = System.Drawing.Color.Black;
             this.radButton8.Image = global::YP_Windows_Manager.Properties.Resources.icons8_disconnected_96;
-            this.radButton8.Location = new System.Drawing.Point(189, 64);
+            this.radButton8.Location = new System.Drawing.Point(189, 16);
             this.radButton8.Name = "radButton8";
             this.radButton8.Size = new System.Drawing.Size(182, 42);
             this.radButton8.TabIndex = 3;
@@ -374,21 +373,6 @@
             this.radButton8.ThemeName = "FluentDark";
             this.toolTip1.SetToolTip(this.radButton8, "Disconnect internet Dial-Up");
             this.radButton8.Click += new System.EventHandler(this.RadButton8_Click);
-            // 
-            // radButton16
-            // 
-            this.radButton16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton16.ForeColor = System.Drawing.Color.Black;
-            this.radButton16.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96;
-            this.radButton16.Location = new System.Drawing.Point(189, 16);
-            this.radButton16.Name = "radButton16";
-            this.radButton16.Size = new System.Drawing.Size(182, 42);
-            this.radButton16.TabIndex = 1;
-            this.radButton16.Text = "Close DVD RW Drive";
-            this.radButton16.ThemeName = "FluentDark";
-            this.radButton16.Click += new System.EventHandler(this.RadButton16_Click);
             // 
             // radButton5
             // 
@@ -413,7 +397,7 @@
             this.radButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton15.ForeColor = System.Drawing.Color.Black;
             this.radButton15.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
-            this.radButton15.Location = new System.Drawing.Point(441, 122);
+            this.radButton15.Location = new System.Drawing.Point(627, 73);
             this.radButton15.Name = "radButton15";
             this.radButton15.Size = new System.Drawing.Size(182, 42);
             this.radButton15.TabIndex = 4;
@@ -431,6 +415,16 @@
             // 
             this.tmrh.Interval = 1000;
             this.tmrh.Tick += new System.EventHandler(this.tmrh_Tick);
+            // 
+            // bChargeInfo
+            // 
+            this.bChargeInfo.AutoSize = true;
+            this.bChargeInfo.Location = new System.Drawing.Point(19, 153);
+            this.bChargeInfo.Name = "bChargeInfo";
+            this.bChargeInfo.Size = new System.Drawing.Size(35, 13);
+            this.bChargeInfo.TabIndex = 5;
+            this.bChargeInfo.Text = "bInfo";
+            this.bChargeInfo.Click += new System.EventHandler(this.label1_Click);
             // 
             // WM
             // 
@@ -459,6 +453,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
+            this.radPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
@@ -480,7 +475,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -514,10 +508,10 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
         private Telerik.WinControls.UI.RadListView printersList;
-        private Telerik.WinControls.UI.RadButton radButton16;
         private System.Windows.Forms.Timer tmrh;
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme2;
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
+        private System.Windows.Forms.Label bChargeInfo;
     }
 }
 
