@@ -32,13 +32,13 @@
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.radWaitingBar1 = new Telerik.WinControls.UI.RadWaitingBar();
-            this.fadingRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.yp01ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fadingRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
@@ -57,13 +57,14 @@
             this.radLabel1.TabIndex = 0;
             this.radLabel1.Text = "YP Windows Manager";
             this.radLabel1.ThemeName = "FluentDark";
-            this.radLabel1.Visible = false;
             // 
             // radWaitingBar1
             // 
+            this.radWaitingBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.radWaitingBar1.ForeColor = System.Drawing.Color.White;
             this.radWaitingBar1.Location = new System.Drawing.Point(12, 146);
             this.radWaitingBar1.Name = "radWaitingBar1";
-            this.radWaitingBar1.Size = new System.Drawing.Size(488, 60);
+            this.radWaitingBar1.Size = new System.Drawing.Size(488, 70);
             this.radWaitingBar1.TabIndex = 1;
             this.radWaitingBar1.Text = "radWaitingBar1";
             this.radWaitingBar1.ThemeName = "FluentDark";
@@ -71,19 +72,16 @@
             this.radWaitingBar1.WaitingIndicators.Add(this.fadingRingWaitingBarIndicatorElement1);
             this.radWaitingBar1.WaitingIndicatorSize = new System.Drawing.Size(100, 14);
             this.radWaitingBar1.WaitingSpeed = 100;
-            this.radWaitingBar1.WaitingStep = 2;
+            this.radWaitingBar1.WaitingStep = 3;
             this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.FadingRing;
             ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingIndicatorSize = new System.Drawing.Size(100, 14);
             ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingDirection = Telerik.WinControls.ProgressOrientation.Left;
             ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingSpeed = 100;
-            ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingStep = 2;
+            ((Telerik.WinControls.UI.RadWaitingBarElement)(this.radWaitingBar1.GetChildAt(0))).WaitingStep = 3;
             ((Telerik.WinControls.UI.WaitingBarContentElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0))).WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.FadingRing;
             ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).ProgressOrientation = Telerik.WinControls.ProgressOrientation.Right;
             ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).Dash = false;
-            // 
-            // fadingRingWaitingBarIndicatorElement1
-            // 
-            this.fadingRingWaitingBarIndicatorElement1.Name = "fadingRingWaitingBarIndicatorElement1";
+            ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.Black;
             // 
             // timer1
             // 
@@ -104,7 +102,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image =    global::YP_Windows_Manager.Properties.Resources.icons8_system_task_961;
+            this.pictureBox1.Image = global::YP_Windows_Manager.Properties.Resources.icons8_system_task_961;
             this.pictureBox1.Location = new System.Drawing.Point(12, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(488, 104);
@@ -131,7 +129,11 @@
             this.yp01ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.yp01ToolStripMenuItem.Text = "yp01";
             // 
-            // waitfrm
+            // fadingRingWaitingBarIndicatorElement1
+            // 
+            this.fadingRingWaitingBarIndicatorElement1.Name = "fadingRingWaitingBarIndicatorElement1";
+            // 
+            // waitFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,7 +143,7 @@
             this.Controls.Add(this.radWaitingBar1);
             this.Controls.Add(this.radLabel1);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "waitfrm";
+            this.Name = "waitFrm";
             // 
             // 
             // 

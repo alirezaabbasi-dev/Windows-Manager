@@ -110,8 +110,8 @@ namespace YP_Windows_Manager_Computer_
 
         private void sysInfoBtn_Click(object sender, EventArgs e)
         {
-            sysInfo asd = new sysInfo();
-            asd.Show();
+            sysInfo info = new sysInfo();
+            info.Show();
             this.Hide();
         }
 
@@ -140,8 +140,8 @@ namespace YP_Windows_Manager_Computer_
 
         private void checkHealthBtn_Click(object sender, EventArgs e)
         {
-            healthCheck frm4 = new healthCheck();
-            frm4.Show();
+            healthCheck health = new healthCheck();
+            health.Show();
             this.Hide();
         }
 
@@ -157,8 +157,8 @@ namespace YP_Windows_Manager_Computer_
 
         private void aboutBtn_Click(object sender, EventArgs e)
         {
-            aboutFrm frm5 = new aboutFrm();
-            frm5.Show();
+            aboutFrm about = new aboutFrm();
+            about.Show();
             this.Hide();
         }
 

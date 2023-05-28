@@ -113,7 +113,6 @@
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(420, 178);
             this.radPanel1.TabIndex = 2;
-            this.radPanel1.ThemeName = "VisualStudio2012Dark";
             // 
             // bChargeInfo
             // 
@@ -198,7 +197,6 @@
             this.radPanel2.Name = "radPanel2";
             this.radPanel2.Size = new System.Drawing.Size(420, 125);
             this.radPanel2.TabIndex = 1;
-            this.radPanel2.ThemeName = "VisualStudio2012Dark";
             // 
             // radButton13
             // 
@@ -243,7 +241,6 @@
             this.radPanel3.Name = "radPanel3";
             this.radPanel3.Size = new System.Drawing.Size(420, 139);
             this.radPanel3.TabIndex = 0;
-            this.radPanel3.ThemeName = "VisualStudio2012Dark";
             // 
             // refreshBtn
             // 
@@ -321,7 +318,6 @@
             this.radPanel4.Name = "radPanel4";
             this.radPanel4.Size = new System.Drawing.Size(374, 454);
             this.radPanel4.TabIndex = 3;
-            this.radPanel4.ThemeName = "VisualStudio2012Dark";
             // 
             // printersList
             // 
