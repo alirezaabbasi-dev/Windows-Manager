@@ -400,7 +400,6 @@
             this.insProgBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.insProgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.insProgBtn.Enabled = false;
             this.insProgBtn.ForeColor = System.Drawing.Color.Black;
             this.insProgBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
             this.insProgBtn.Location = new System.Drawing.Point(627, 73);

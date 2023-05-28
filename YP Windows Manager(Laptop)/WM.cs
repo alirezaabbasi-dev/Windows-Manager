@@ -29,25 +29,22 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            insProgBtn.BackColor= Color.DimGray;
-            //............
-            GetInstalledPrinters();
-            this.Text = "YP WM (Beta)";
-            this.ThemeName = fluentTheme1.ThemeName;
-            radPanel1.ThemeName = fluentTheme1.ThemeName;
-            radPanel2.ThemeName = fluentTheme1.ThemeName;
-            radPanel3.ThemeName = fluentTheme1.ThemeName;
-            radPanel4.ThemeName = fluentTheme1.ThemeName;
+                GetInstalledPrinters();
+                this.Text = "YP WM (Beta)";
+                this.ThemeName = fluentTheme1.ThemeName;
+                radPanel1.ThemeName = fluentTheme1.ThemeName;
+                radPanel2.ThemeName = fluentTheme1.ThemeName;
+                radPanel3.ThemeName = fluentTheme1.ThemeName;
+                radPanel4.ThemeName = fluentTheme1.ThemeName;
 
-            PowerStatus powerStatus = SystemInformation.PowerStatus;
-            int batteryLevel = (int)(powerStatus.BatteryLifePercent* 100);
-            bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
-
-
+                PowerStatus powerStatus = SystemInformation.PowerStatus;
+                int batteryLevel = (int)(powerStatus.BatteryLifePercent* 100);
+                bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
         }
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath,
           RecycleFlags dwFlags);
+
         private void shutdownBtn_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("ShutDown", "/s /t 60");
@@ -164,7 +161,9 @@ namespace YP_Windows_Manager_Computer_
 
         private void insProgBtn_Click(object sender, EventArgs e)
         {   
-         //nothing for now :)
+       installedAppFrm installedApp = new installedAppFrm();
+            installedApp.Show();
+            this.Hide();
         }
 
         private void RadProgressBar1_Click(object sender, EventArgs e)

@@ -51,3 +51,4 @@ C:\Users\Acer\Desktop\New folder (3)\Windows-Manager\YP Windows Manager(Laptop)\
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.sysInfo.resources
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.healthCheck.resources
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.aboutFrm.resources
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Computer_.installedAppFrm.resources

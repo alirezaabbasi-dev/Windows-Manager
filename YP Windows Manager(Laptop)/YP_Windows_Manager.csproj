@@ -103,6 +103,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="installedAppFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="installedAppFrm.designer.cs">
+      <DependentUpon>installedAppFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     <Compile Include="waitFrm.Designer.cs">
       <DependentUpon>waitFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="installedAppFrm.resx">
+      <DependentUpon>installedAppFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WM.resx">
       <DependentUpon>WM.cs</DependentUpon>
     </EmbeddedResource>
