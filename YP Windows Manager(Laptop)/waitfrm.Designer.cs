@@ -1,6 +1,6 @@
 ﻿namespace YP_Windows_Manager_Computer_
 {
-    partial class waitfrm
+    partial class waitFrm
     {
         /// <summary>
         /// Required designer variable.

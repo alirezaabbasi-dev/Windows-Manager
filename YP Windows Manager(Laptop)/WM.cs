@@ -29,6 +29,8 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            insProgBtn.BackColor= Color.DimGray;
+            //............
             GetInstalledPrinters();
             this.Text = "YP WM (Beta)";
             this.ThemeName = fluentTheme1.ThemeName;
@@ -46,23 +48,23 @@ namespace YP_Windows_Manager_Computer_
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath,
           RecycleFlags dwFlags);
-        private void RadButton1_Click(object sender, EventArgs e)
+        private void shutdownBtn_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("ShutDown", "/s /t 60");
         }
 
-        private void RadButton2_Click(object sender, EventArgs e)
+        private void singoutBtn_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("ShutDown", "/l /t 60");
             HelpButton.ToString();
         }
 
-        private void RadButton4_Click(object sender, EventArgs e)
+        private void restartBtn_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("ShutDown", "/r /t 60");
         }
 
-        private void RadButton3_Click(object sender, EventArgs e)
+        private void logcancellBtn_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("ShutDown", "/a");
             HelpButton.ToString();
@@ -70,15 +72,15 @@ namespace YP_Windows_Manager_Computer_
         }
         [DllImport("winmm.dll", EntryPoint = "mciSendStringA", CharSet = CharSet.Ansi)]
         protected static extern int MciSendString(string lpstrCommand,
-      StringBuilder lpstrReturnString,
-      int uReturnLength,
-      IntPtr hwndCallback);
-        private void RadButton5_Click(object sender, EventArgs e)
+               StringBuilder lpstrReturnString,
+               int uReturnLength,
+                   IntPtr hwndCallback);
+        private void openDVDBtn_Click(object sender, EventArgs e)
         {
             int ret = MciSendString("set cdaudio door open", null, 0, IntPtr.Zero);
         }
 
-        private void RadButton6_Click(object sender, EventArgs e)
+        private void emptyRecycleBtn_Click(object sender, EventArgs e)
         {
             uint result = SHEmptyRecycleBin(IntPtr.Zero, null, 0);
         }
@@ -106,14 +108,14 @@ namespace YP_Windows_Manager_Computer_
             MetroMessageBox.Show(this, "internet Dial-Up Disconnected ", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void RadButton9_Click(object sender, EventArgs e)
+        private void sysInfoBtn_Click(object sender, EventArgs e)
         {
-            Form2 asd = new Form2();
+            sysInfo asd = new sysInfo();
             asd.Show();
             this.Hide();
         }
 
-        private void RadButton10_Click(object sender, EventArgs e)
+        private void appStnBtn_Click(object sender, EventArgs e)
         {
             Form3 frm = new Form3();
             frm.Show();
@@ -126,7 +128,7 @@ namespace YP_Windows_Manager_Computer_
 
         }
 
-        private void RadButton11_Click(object sender, EventArgs e)
+        private void refreshBtn_Click(object sender, EventArgs e)
         {
             this.Refresh();
         }
@@ -136,9 +138,9 @@ namespace YP_Windows_Manager_Computer_
                 printersList.Items.Add(printerName);
         }
 
-        private void RadButton12_Click(object sender, EventArgs e)
+        private void checkHealthBtn_Click(object sender, EventArgs e)
         {
-            Form4 frm4 = new Form4();
+            healthCheck frm4 = new healthCheck();
             frm4.Show();
             this.Hide();
         }
@@ -153,19 +155,16 @@ namespace YP_Windows_Manager_Computer_
 
         }
 
-        private void RadButton14_Click(object sender, EventArgs e)
+        private void aboutBtn_Click(object sender, EventArgs e)
         {
-            Form5 frm5 = new Form5();
+            aboutFrm frm5 = new aboutFrm();
             frm5.Show();
             this.Hide();
         }
 
-        private void RadButton15_Click(object sender, EventArgs e)
-        {
-            Form6 frm = new Form6();
-            frm.Show();
-            this.Hide();
-
+        private void insProgBtn_Click(object sender, EventArgs e)
+        {   
+         //nothing for now :)
         }
 
         private void RadProgressBar1_Click(object sender, EventArgs e)
@@ -219,28 +218,6 @@ namespace YP_Windows_Manager_Computer_
 
         }
 
-        private void tmrh_Tick(object sender, EventArgs e)
-        {
-            
-            if (this.Opacity==100)
-            {
-                this.Opacity = 90;
-            }
-            if (this.Opacity==90)
-            {
-                this.Opacity = 70;
-            }
-            if (this.Opacity==70)
-            {
-                this.Opacity = 40;
-            }
-            if (this.Opacity==40)
-            {
-                
-               
-               
-            }
-        }
 
         private void printersList_SelectedItemChanged(object sender, EventArgs e)
         {

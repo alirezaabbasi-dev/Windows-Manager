@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YP_Windows_Manager_Computer_
 {
-    public partial class Form2 : Telerik.WinControls.UI.RadForm
+    public partial class sysInfo : Telerik.WinControls.UI.RadForm
     {
-        public Form2()
+        public sysInfo()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YP_Windows_Manager_Computer_
 {
-    public partial class waitfrm : Telerik.WinControls.UI.RadForm
+    public partial class waitFrm : Telerik.WinControls.UI.RadForm
     {
-        public waitfrm()
+        public waitFrm()
         {
             InitializeComponent();
         }

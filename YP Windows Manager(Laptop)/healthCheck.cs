@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace YP_Windows_Manager_Computer_
 {
-    public partial class Form4 : Telerik.WinControls.UI.RadForm
+    public partial class healthCheck : Telerik.WinControls.UI.RadForm
     {
        
-        public Form4()
+        public healthCheck()
         {
         
             InitializeComponent();

@@ -13,8 +13,8 @@ namespace YP_Windows_Manager_Computer_
 {
     public partial class Form3 : Telerik.WinControls.UI.RadForm
     {
-        RegistryKey reg = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-        Microsoft.Win32.RegistryKey hazf = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+        RegistryKey addreg = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+        Microsoft.Win32.RegistryKey remreg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
         public Form3()
         {
           
@@ -28,12 +28,12 @@ namespace YP_Windows_Manager_Computer_
 
         private void radButton1_Click(object sender, EventArgs e)
         {
-            reg.SetValue("yp-wm-CPTP-ver:---_2.0.2", Application.ExecutablePath.ToString());
+            addreg.SetValue("yp-wm-ver:---_2.0.1", Application.ExecutablePath.ToString());
         }
 
         private void radButton2_Click(object sender, EventArgs e)
         {
-            hazf.DeleteValue("yp-wm-CPTP-ver:---_2.0.2", false);
+            remreg.DeleteValue("yp-wm-ver:---_2.0.1", false);
         }
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)

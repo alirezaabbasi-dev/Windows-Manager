@@ -1,6 +1,6 @@
 ﻿namespace YP_Windows_Manager_Computer_
 {
-    partial class Form4
+    partial class healthCheck
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(healthCheck));
             this.radProgressBar1 = new Telerik.WinControls.UI.RadProgressBar();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -80,9 +80,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             this.label1.Visible = false;
             // 
             // timer1
@@ -136,7 +135,7 @@
             this.timer6.Enabled = true;
             this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
             // 
-            // Form4
+            // healthCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +146,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form4";
+            this.Name = "healthCheck";
             this.Opacity = 0.95D;
             // 
             // 

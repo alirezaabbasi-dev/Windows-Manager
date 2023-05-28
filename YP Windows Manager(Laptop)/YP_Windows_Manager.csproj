@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,6 +48,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>icons8-system-task-96.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>YP_Windows_Manager_Computer_.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework">
@@ -106,11 +109,11 @@
     <Compile Include="WM.Designer.cs">
       <DependentUpon>WM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="sysInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="sysInfo.Designer.cs">
+      <DependentUpon>sysInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="STN .cs">
       <SubType>Form</SubType>
@@ -118,49 +121,40 @@
     <Compile Include="STN .Designer.cs">
       <DependentUpon>STN .cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="healthCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="healthCheck.Designer.cs">
+      <DependentUpon>healthCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="aboutFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form6.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="aboutFrm.Designer.cs">
+      <DependentUpon>aboutFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="waitfrm.cs">
+    <Compile Include="waitFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="waitfrm.Designer.cs">
-      <DependentUpon>waitfrm.cs</DependentUpon>
+    <Compile Include="waitFrm.Designer.cs">
+      <DependentUpon>waitFrm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="WM.resx">
       <DependentUpon>WM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="sysInfo.resx">
+      <DependentUpon>sysInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="STN .resx">
       <DependentUpon>STN .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="healthCheck.resx">
+      <DependentUpon>healthCheck.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="aboutFrm.resx">
+      <DependentUpon>aboutFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -173,8 +167,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="waitfrm.resx">
-      <DependentUpon>waitfrm.cs</DependentUpon>
+    <EmbeddedResource Include="waitFrm.resx">
+      <DependentUpon>waitFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

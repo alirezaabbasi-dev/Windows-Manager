@@ -31,7 +31,7 @@ namespace YP_Windows_Manager_Computer_
             }
             else
             {
-                Application.Run(new waitfrm());
+                Application.Run(new waitFrm());
             }
 
         }
