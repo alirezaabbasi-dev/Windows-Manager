@@ -10,6 +10,8 @@ using System.Drawing.Printing;
 #pragma warning restore CS0105 // Using directive appeared previously in this namespace
 using System.Net.NetworkInformation;
 using MetroFramework;
+using System.IO;
+
 namespace YP_Windows_Manager_Computer_
 {
     public partial class WM : Telerik.WinControls.UI.RadForm
@@ -230,7 +232,16 @@ namespace YP_Windows_Manager_Computer_
 
         private void cleanTmpBtn_Click(object sender, EventArgs e)
         {
+            /*string userName = Environment.UserName;
+                var dir = new DirectoryInfo("C:\\Users\\" + userName + "\\AppData\\Local\\Temp");
+                var d = new DirectoryInfo("C:\\Windows\\Temp");
 
+            foreach (var file in Directory.GetFiles(d.))
+                {
+                    File.Delete(file);
+                }
+            */
+            System.Diagnostics.Process.Start("cleanmgr");
         }
     }
 }

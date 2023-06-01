@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace YP_Windows_Manager_Computer_
 {
     public partial class sysInfo : Telerik.WinControls.UI.RadForm
@@ -18,25 +19,21 @@ namespace YP_Windows_Manager_Computer_
         }
 
         private void Form2_Load(object sender, EventArgs e)
-        {
-
-
-            listBox1.Items.Add("PC Information:");
-            listBox1.Items.Add("");
-            listBox1.Items.Add("PC Name: " + Environment.MachineName.ToString());
-            listBox1.Items.Add("User Name: " + Environment.UserName.ToString());
-            listBox1.Items.Add("User Doamin Name: " + Environment.UserDomainName.ToString());
-            listBox1.Items.Add("Processor Counter: " + Environment.ProcessorCount.ToString());
-            listBox1.Items.Add("OS Version: " + Environment.OSVersion.ToString());
-            listBox1.Items.Add("System Directory: " + Environment.SystemDirectory.ToString());
-            listBox1.Items.Add("Working Set: " + Environment.WorkingSet.ToString());
-            listBox1.Items.Add("Application directory: " + Environment.CurrentDirectory.ToString());
-           // listBox1.Items.Add(Environment.SystemPageSize);
-          //  listBox1.Items.Add("System time:" + DateTime.Now);
-           // Resizable = false;
-            MinimizeBox = true;
-            MaximizeBox = false ;
-            ControlBox = true;
+        { 
+            sysInfoList.Items.Add("PC Information:");
+            sysInfoList.Items.Add("");
+            sysInfoList.Items.Add("PC Name: " + Environment.MachineName.ToString());
+            sysInfoList.Items.Add("User Name: " + Environment.UserName.ToString());
+            sysInfoList.Items.Add("User Doamin Name: " + Environment.UserDomainName.ToString());
+            sysInfoList.Items.Add("Processor Counter: " + Environment.ProcessorCount.ToString());
+            sysInfoList.Items.Add("OS Version: " + Environment.OSVersion.ToString());
+            sysInfoList.Items.Add("System Directory: " + Environment.SystemDirectory.ToString());
+            sysInfoList.Items.Add("Working Set: " + Environment.WorkingSet.ToString());
+            sysInfoList.Items.Add("Application directory: " + Environment.CurrentDirectory.ToString());
+                //frm settings
+                MinimizeBox = true;
+                MaximizeBox = false ;
+                ControlBox = true;
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
