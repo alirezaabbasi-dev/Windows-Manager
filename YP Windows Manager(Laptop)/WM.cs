@@ -227,6 +227,11 @@ namespace YP_Windows_Manager_Computer_
         {
 
         }
+
+        private void cleanTmpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

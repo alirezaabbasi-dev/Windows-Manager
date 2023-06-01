@@ -248,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-system-task-96.ico" />
+    <None Include="Resources\icons8-cleaner-32.png" />
     <None Include="Resources\icons8-cd-96.ico" />
     <None Include="Resources\icons8-system-task-96.png" />
     <None Include="Resources\icons8-pause-96.ico" />
