@@ -45,7 +45,7 @@ namespace YP_Windows_Manager_Computer_
             ColorDialog cdl = new ColorDialog();
             if (cdl  .ShowDialog()==DialogResult.OK )
             {
-                richTextBox1 .ForeColor = cdl .Color;
+                aboutTxt .ForeColor = cdl .Color;
             }
         }
 

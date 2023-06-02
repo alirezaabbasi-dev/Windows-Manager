@@ -1,0 +1,92 @@
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe.config
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).pdb
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\TelerikCommon.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.xml
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.xml
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csprojResolveAssemblyReference.cache
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form1.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Properties.Resources.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csproj.GenerateResource.Cache
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe.licenses
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).pdb
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\MetroFramework.dll
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form2.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form3.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form4.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form5.resources
+F:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form6.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe.config
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).pdb
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\TelerikCommon.dll
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.xml
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.xml
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csprojResolveAssemblyReference.cache
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form1.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form2.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form3.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form4.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form5.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form6.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Properties.Resources.resources
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csproj.GenerateResource.Cache
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe.licenses
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe
+H:\YP\YP-buid 219.4\Yp-Projects\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).pdb
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe.config
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).exe
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\YP Windows Manager(Laptop).pdb
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Fluent.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.FluentDark.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\TelerikCommon.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.xml
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.xml
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csprojResolveAssemblyReference.cache
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form1.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form2.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form3.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form4.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form5.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Form6.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.Properties.Resources.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP_Windows_Manager_Laptop_.waitfrm.resources
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).csproj.GenerateResource.Cache
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe.licenses
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).exe
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\obj\Debug\YP Windows Manager(Laptop).pdb
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.TelerikMetroTouch.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+D:\YP WM(LPTP)\YP Windows Manager(Laptop)\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.RichTextEditor.xml
