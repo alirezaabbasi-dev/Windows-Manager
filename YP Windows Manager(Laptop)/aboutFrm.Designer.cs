@@ -71,8 +71,8 @@
             this.aboutTxt.ReadOnly = true;
             this.aboutTxt.Size = new System.Drawing.Size(369, 285);
             this.aboutTxt.TabIndex = 3;
-            this.aboutTxt.Text = "Application Name: YP Windows Manager\n\nApplication Version: 2.1.0(Beta)\n\nCompany N" +
-    "ame: YP(You Pc)\n\nDeveloper: Alireza Abbasi\n\nApplication Icons: icons8";
+            this.aboutTxt.Text = "Application Name: YP Windows Manager\n\nApplication Version: 2.1.0\n\nCompany Name: Y" +
+    "P(You Pc)\n\nDeveloper: Alireza Abbasi\n\nApplication Icons: icons8";
             // 
             // radButton3
             // 
