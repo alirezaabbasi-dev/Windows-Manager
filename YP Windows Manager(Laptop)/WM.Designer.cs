@@ -35,57 +35,57 @@
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton4 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
-            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.bChargeInfo = new System.Windows.Forms.Label();
+            this.shutdownBtn = new Telerik.WinControls.UI.RadButton();
+            this.restartBtn = new Telerik.WinControls.UI.RadButton();
+            this.singoutBtn = new Telerik.WinControls.UI.RadButton();
+            this.logcancellBtn = new Telerik.WinControls.UI.RadButton();
             this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
             this.radButton13 = new Telerik.WinControls.UI.RadButton();
             this.radButton7 = new Telerik.WinControls.UI.RadButton();
             this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
-            this.radButton11 = new Telerik.WinControls.UI.RadButton();
-            this.radButton12 = new Telerik.WinControls.UI.RadButton();
-            this.radButton14 = new Telerik.WinControls.UI.RadButton();
-            this.radButton9 = new Telerik.WinControls.UI.RadButton();
+            this.refreshBtn = new Telerik.WinControls.UI.RadButton();
+            this.checkHealthBtn = new Telerik.WinControls.UI.RadButton();
+            this.aboutBtn = new Telerik.WinControls.UI.RadButton();
+            this.sysInfoBtn = new Telerik.WinControls.UI.RadButton();
             this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
+            this.cleanTmpBtn = new Telerik.WinControls.UI.RadButton();
             this.printersList = new Telerik.WinControls.UI.RadListView();
-            this.radButton10 = new Telerik.WinControls.UI.RadButton();
-            this.radButton6 = new Telerik.WinControls.UI.RadButton();
+            this.appStnBtn = new Telerik.WinControls.UI.RadButton();
+            this.emptyRecycleBtn = new Telerik.WinControls.UI.RadButton();
             this.radButton8 = new Telerik.WinControls.UI.RadButton();
-            this.radButton16 = new Telerik.WinControls.UI.RadButton();
-            this.radButton5 = new Telerik.WinControls.UI.RadButton();
+            this.openDVDBtn = new Telerik.WinControls.UI.RadButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.radButton15 = new Telerik.WinControls.UI.RadButton();
+            this.insProgBtn = new Telerik.WinControls.UI.RadButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tmrh = new System.Windows.Forms.Timer(this.components);
             this.fluentDarkTheme2 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
             this.radPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
             this.radPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
             this.radPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.printersList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appStnBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptyRecycleBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openDVDBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insProgBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,78 +106,88 @@
             // 
             this.radPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.radPanel1.Controls.Add(this.radButton1);
-            this.radPanel1.Controls.Add(this.radButton4);
-            this.radPanel1.Controls.Add(this.radButton2);
-            this.radPanel1.Controls.Add(this.radButton3);
+            this.radPanel1.Controls.Add(this.bChargeInfo);
+            this.radPanel1.Controls.Add(this.shutdownBtn);
+            this.radPanel1.Controls.Add(this.restartBtn);
+            this.radPanel1.Controls.Add(this.singoutBtn);
+            this.radPanel1.Controls.Add(this.logcancellBtn);
             this.radPanel1.Location = new System.Drawing.Point(12, 10);
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(420, 178);
             this.radPanel1.TabIndex = 2;
-            this.radPanel1.ThemeName = "VisualStudio2012Dark";
             // 
-            // radButton1
+            // bChargeInfo
             // 
-            this.radButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.bChargeInfo.AutoSize = true;
+            this.bChargeInfo.Location = new System.Drawing.Point(19, 153);
+            this.bChargeInfo.Name = "bChargeInfo";
+            this.bChargeInfo.Size = new System.Drawing.Size(35, 13);
+            this.bChargeInfo.TabIndex = 5;
+            this.bChargeInfo.Text = "bInfo";
+            this.bChargeInfo.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // shutdownBtn
+            // 
+            this.shutdownBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_button_961;
-            this.radButton1.Location = new System.Drawing.Point(17, 16);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(182, 64);
-            this.radButton1.TabIndex = 0;
-            this.radButton1.Text = "Shut Down pc";
-            this.radButton1.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton1, "Shut down ");
-            this.radButton1.Click += new System.EventHandler(this.RadButton1_Click);
+            this.shutdownBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.shutdownBtn.ForeColor = System.Drawing.Color.Black;
+            this.shutdownBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_button_961;
+            this.shutdownBtn.Location = new System.Drawing.Point(17, 16);
+            this.shutdownBtn.Name = "shutdownBtn";
+            this.shutdownBtn.Size = new System.Drawing.Size(182, 64);
+            this.shutdownBtn.TabIndex = 0;
+            this.shutdownBtn.Text = "Shut Down pc";
+            this.shutdownBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.shutdownBtn, "Shut down ");
+            this.shutdownBtn.Click += new System.EventHandler(this.shutdownBtn_Click);
             // 
-            // radButton4
+            // restartBtn
             // 
-            this.radButton4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.restartBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton4.ForeColor = System.Drawing.Color.Black;
-            this.radButton4.Image = global::YP_Windows_Manager.Properties.Resources.icons8_reset_96__1_;
-            this.radButton4.Location = new System.Drawing.Point(205, 16);
-            this.radButton4.Name = "radButton4";
-            this.radButton4.Size = new System.Drawing.Size(182, 64);
-            this.radButton4.TabIndex = 1;
-            this.radButton4.Text = "Restart pc";
-            this.radButton4.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton4, "Restart");
-            this.radButton4.Click += new System.EventHandler(this.RadButton4_Click);
+            this.restartBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.restartBtn.ForeColor = System.Drawing.Color.Black;
+            this.restartBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_reset_96__1_;
+            this.restartBtn.Location = new System.Drawing.Point(205, 16);
+            this.restartBtn.Name = "restartBtn";
+            this.restartBtn.Size = new System.Drawing.Size(182, 64);
+            this.restartBtn.TabIndex = 1;
+            this.restartBtn.Text = "Restart pc";
+            this.restartBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.restartBtn, "Restart");
+            this.restartBtn.Click += new System.EventHandler(this.restartBtn_Click);
             // 
-            // radButton2
+            // singoutBtn
             // 
-            this.radButton2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.singoutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton2.ForeColor = System.Drawing.Color.Black;
-            this.radButton2.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_96;
-            this.radButton2.Location = new System.Drawing.Point(17, 86);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(182, 64);
-            this.radButton2.TabIndex = 2;
-            this.radButton2.Text = "Sing out";
-            this.radButton2.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton2, "Sing out");
-            this.radButton2.Click += new System.EventHandler(this.RadButton2_Click);
+            this.singoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.singoutBtn.ForeColor = System.Drawing.Color.Black;
+            this.singoutBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_96;
+            this.singoutBtn.Location = new System.Drawing.Point(17, 86);
+            this.singoutBtn.Name = "singoutBtn";
+            this.singoutBtn.Size = new System.Drawing.Size(182, 64);
+            this.singoutBtn.TabIndex = 2;
+            this.singoutBtn.Text = "Sing out";
+            this.singoutBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.singoutBtn, "Sing out");
+            this.singoutBtn.Click += new System.EventHandler(this.singoutBtn_Click);
             // 
-            // radButton3
+            // logcancellBtn
             // 
-            this.radButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton3.ForeColor = System.Drawing.Color.Black;
-            this.radButton3.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
-            this.radButton3.Location = new System.Drawing.Point(205, 86);
-            this.radButton3.Name = "radButton3";
-            this.radButton3.Size = new System.Drawing.Size(182, 64);
-            this.radButton3.TabIndex = 3;
-            this.radButton3.Text = "    Logoff Cancell";
-            this.radButton3.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton3, "Logoff cancell");
-            this.radButton3.Click += new System.EventHandler(this.RadButton3_Click);
+            this.logcancellBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.logcancellBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.logcancellBtn.ForeColor = System.Drawing.Color.Black;
+            this.logcancellBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
+            this.logcancellBtn.Location = new System.Drawing.Point(205, 86);
+            this.logcancellBtn.Name = "logcancellBtn";
+            this.logcancellBtn.Size = new System.Drawing.Size(182, 64);
+            this.logcancellBtn.TabIndex = 3;
+            this.logcancellBtn.Text = "    Logoff Cancell";
+            this.logcancellBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.logcancellBtn, "Logoff cancell");
+            this.logcancellBtn.Click += new System.EventHandler(this.logcancellBtn_Click);
             // 
             // radPanel2
             // 
@@ -189,7 +199,6 @@
             this.radPanel2.Name = "radPanel2";
             this.radPanel2.Size = new System.Drawing.Size(420, 125);
             this.radPanel2.TabIndex = 1;
-            this.radPanel2.ThemeName = "VisualStudio2012Dark";
             // 
             // radButton13
             // 
@@ -226,94 +235,108 @@
             // radPanel3
             // 
             this.radPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radPanel3.Controls.Add(this.radButton11);
-            this.radPanel3.Controls.Add(this.radButton12);
-            this.radPanel3.Controls.Add(this.radButton14);
-            this.radPanel3.Controls.Add(this.radButton9);
+            this.radPanel3.Controls.Add(this.refreshBtn);
+            this.radPanel3.Controls.Add(this.checkHealthBtn);
+            this.radPanel3.Controls.Add(this.aboutBtn);
+            this.radPanel3.Controls.Add(this.sysInfoBtn);
             this.radPanel3.Location = new System.Drawing.Point(12, 325);
             this.radPanel3.Name = "radPanel3";
             this.radPanel3.Size = new System.Drawing.Size(420, 139);
             this.radPanel3.TabIndex = 0;
-            this.radPanel3.ThemeName = "VisualStudio2012Dark";
             // 
-            // radButton11
+            // refreshBtn
             // 
-            this.radButton11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.refreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton11.ForeColor = System.Drawing.Color.Black;
-            this.radButton11.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
-            this.radButton11.Location = new System.Drawing.Point(22, 12);
-            this.radButton11.Name = "radButton11";
-            this.radButton11.Size = new System.Drawing.Size(182, 52);
-            this.radButton11.TabIndex = 0;
-            this.radButton11.Text = "Refresh";
-            this.radButton11.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton11, "Refresh");
-            this.radButton11.Click += new System.EventHandler(this.RadButton11_Click);
+            this.refreshBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.refreshBtn.ForeColor = System.Drawing.Color.Black;
+            this.refreshBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
+            this.refreshBtn.Location = new System.Drawing.Point(22, 12);
+            this.refreshBtn.Name = "refreshBtn";
+            this.refreshBtn.Size = new System.Drawing.Size(182, 52);
+            this.refreshBtn.TabIndex = 0;
+            this.refreshBtn.Text = "Refresh";
+            this.refreshBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.refreshBtn, "Refresh");
+            this.refreshBtn.Click += new System.EventHandler(this.refreshBtn_Click);
             // 
-            // radButton12
+            // checkHealthBtn
             // 
-            this.radButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton12.ForeColor = System.Drawing.Color.Black;
-            this.radButton12.Image = global::YP_Windows_Manager.Properties.Resources.icons8_system_information_96__1_;
-            this.radButton12.Location = new System.Drawing.Point(22, 70);
-            this.radButton12.Name = "radButton12";
-            this.radButton12.Size = new System.Drawing.Size(182, 52);
-            this.radButton12.TabIndex = 2;
-            this.radButton12.Text = "Check PC Health";
-            this.radButton12.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton12, "Check PC Health");
-            this.radButton12.Click += new System.EventHandler(this.RadButton12_Click);
+            this.checkHealthBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.checkHealthBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.checkHealthBtn.ForeColor = System.Drawing.Color.Black;
+            this.checkHealthBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_system_information_96__1_;
+            this.checkHealthBtn.Location = new System.Drawing.Point(22, 70);
+            this.checkHealthBtn.Name = "checkHealthBtn";
+            this.checkHealthBtn.Size = new System.Drawing.Size(182, 52);
+            this.checkHealthBtn.TabIndex = 2;
+            this.checkHealthBtn.Text = "Check PC Health";
+            this.checkHealthBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.checkHealthBtn, "Check PC Health");
+            this.checkHealthBtn.Click += new System.EventHandler(this.checkHealthBtn_Click);
             // 
-            // radButton14
+            // aboutBtn
             // 
-            this.radButton14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.aboutBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton14.ForeColor = System.Drawing.Color.Black;
-            this.radButton14.Image = global::YP_Windows_Manager.Properties.Resources.icons8_about_96__2_;
-            this.radButton14.Location = new System.Drawing.Point(210, 70);
-            this.radButton14.Name = "radButton14";
-            this.radButton14.Size = new System.Drawing.Size(182, 52);
-            this.radButton14.TabIndex = 3;
-            this.radButton14.Text = "About";
-            this.radButton14.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton14, "About yp ");
-            this.radButton14.Click += new System.EventHandler(this.RadButton14_Click);
+            this.aboutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.aboutBtn.ForeColor = System.Drawing.Color.Black;
+            this.aboutBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_about_96__2_;
+            this.aboutBtn.Location = new System.Drawing.Point(210, 70);
+            this.aboutBtn.Name = "aboutBtn";
+            this.aboutBtn.Size = new System.Drawing.Size(182, 52);
+            this.aboutBtn.TabIndex = 3;
+            this.aboutBtn.Text = "About";
+            this.aboutBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.aboutBtn, "About yp ");
+            this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
-            // radButton9
+            // sysInfoBtn
             // 
-            this.radButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton9.ForeColor = System.Drawing.Color.Black;
-            this.radButton9.Image = global::YP_Windows_Manager.Properties.Resources.icons8_processor_96__1_;
-            this.radButton9.Location = new System.Drawing.Point(210, 12);
-            this.radButton9.Name = "radButton9";
-            this.radButton9.Size = new System.Drawing.Size(182, 52);
-            this.radButton9.TabIndex = 1;
-            this.radButton9.Text = "System Information";
-            this.radButton9.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton9, "System Information");
-            this.radButton9.Click += new System.EventHandler(this.RadButton9_Click);
+            this.sysInfoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sysInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.sysInfoBtn.ForeColor = System.Drawing.Color.Black;
+            this.sysInfoBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_processor_96__1_;
+            this.sysInfoBtn.Location = new System.Drawing.Point(210, 12);
+            this.sysInfoBtn.Name = "sysInfoBtn";
+            this.sysInfoBtn.Size = new System.Drawing.Size(182, 52);
+            this.sysInfoBtn.TabIndex = 1;
+            this.sysInfoBtn.Text = "System Information";
+            this.sysInfoBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.sysInfoBtn, "System Information");
+            this.sysInfoBtn.Click += new System.EventHandler(this.sysInfoBtn_Click);
             // 
             // radPanel4
             // 
             this.radPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.radPanel4.Controls.Add(this.cleanTmpBtn);
             this.radPanel4.Controls.Add(this.printersList);
-            this.radPanel4.Controls.Add(this.radButton10);
-            this.radPanel4.Controls.Add(this.radButton6);
+            this.radPanel4.Controls.Add(this.appStnBtn);
+            this.radPanel4.Controls.Add(this.emptyRecycleBtn);
             this.radPanel4.Controls.Add(this.radButton8);
-            this.radPanel4.Controls.Add(this.radButton16);
-            this.radPanel4.Controls.Add(this.radButton5);
+            this.radPanel4.Controls.Add(this.openDVDBtn);
             this.radPanel4.Location = new System.Drawing.Point(438, 10);
             this.radPanel4.Name = "radPanel4";
             this.radPanel4.Size = new System.Drawing.Size(374, 454);
             this.radPanel4.TabIndex = 3;
-            this.radPanel4.ThemeName = "VisualStudio2012Dark";
+            // 
+            // cleanTmpBtn
+            // 
+            this.cleanTmpBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cleanTmpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.cleanTmpBtn.ForeColor = System.Drawing.Color.Black;
+            this.cleanTmpBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cleaner_32;
+            this.cleanTmpBtn.Location = new System.Drawing.Point(189, 112);
+            this.cleanTmpBtn.Name = "cleanTmpBtn";
+            this.cleanTmpBtn.Size = new System.Drawing.Size(182, 42);
+            this.cleanTmpBtn.TabIndex = 6;
+            this.cleanTmpBtn.Text = "Clean Temp Files";
+            this.cleanTmpBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.cleanTmpBtn, "Clean Temp Files");
+            this.cleanTmpBtn.Click += new System.EventHandler(this.cleanTmpBtn_Click);
             // 
             // printersList
             // 
@@ -330,35 +353,35 @@
             this.printersList.ThemeName = "TelerikMetroBlue";
             this.printersList.SelectedItemChanged += new System.EventHandler(this.printersList_SelectedItemChanged);
             // 
-            // radButton10
+            // appStnBtn
             // 
-            this.radButton10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.appStnBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton10.ForeColor = System.Drawing.Color.Black;
-            this.radButton10.Image = global::YP_Windows_Manager.Properties.Resources.icons8_gears_96;
-            this.radButton10.Location = new System.Drawing.Point(189, 112);
-            this.radButton10.Name = "radButton10";
-            this.radButton10.Size = new System.Drawing.Size(182, 42);
-            this.radButton10.TabIndex = 4;
-            this.radButton10.Text = "Application Settings";
-            this.radButton10.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton10, "Application Settings");
-            this.radButton10.Click += new System.EventHandler(this.RadButton10_Click);
+            this.appStnBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.appStnBtn.ForeColor = System.Drawing.Color.Black;
+            this.appStnBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_gears_96;
+            this.appStnBtn.Location = new System.Drawing.Point(3, 112);
+            this.appStnBtn.Name = "appStnBtn";
+            this.appStnBtn.Size = new System.Drawing.Size(182, 42);
+            this.appStnBtn.TabIndex = 4;
+            this.appStnBtn.Text = "Application Settings";
+            this.appStnBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.appStnBtn, "Application Settings");
+            this.appStnBtn.Click += new System.EventHandler(this.appStnBtn_Click);
             // 
-            // radButton6
+            // emptyRecycleBtn
             // 
-            this.radButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton6.ForeColor = System.Drawing.Color.Black;
-            this.radButton6.Image = global::YP_Windows_Manager.Properties.Resources.icons8_recycle_bin_96;
-            this.radButton6.Location = new System.Drawing.Point(3, 64);
-            this.radButton6.Name = "radButton6";
-            this.radButton6.Size = new System.Drawing.Size(182, 42);
-            this.radButton6.TabIndex = 2;
-            this.radButton6.Text = "Empty Recycle Bin";
-            this.radButton6.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton6, "Empty Recycle Bin");
-            this.radButton6.Click += new System.EventHandler(this.RadButton6_Click);
+            this.emptyRecycleBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.emptyRecycleBtn.ForeColor = System.Drawing.Color.Black;
+            this.emptyRecycleBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_recycle_bin_96;
+            this.emptyRecycleBtn.Location = new System.Drawing.Point(3, 63);
+            this.emptyRecycleBtn.Name = "emptyRecycleBtn";
+            this.emptyRecycleBtn.Size = new System.Drawing.Size(182, 42);
+            this.emptyRecycleBtn.TabIndex = 2;
+            this.emptyRecycleBtn.Text = "Empty Recycle Bin";
+            this.emptyRecycleBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.emptyRecycleBtn, "Empty Recycle Bin");
+            this.emptyRecycleBtn.Click += new System.EventHandler(this.emptyRecycleBtn_Click);
             // 
             // radButton8
             // 
@@ -366,7 +389,7 @@
             this.radButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton8.ForeColor = System.Drawing.Color.Black;
             this.radButton8.Image = global::YP_Windows_Manager.Properties.Resources.icons8_disconnected_96;
-            this.radButton8.Location = new System.Drawing.Point(189, 64);
+            this.radButton8.Location = new System.Drawing.Point(189, 16);
             this.radButton8.Name = "radButton8";
             this.radButton8.Size = new System.Drawing.Size(182, 42);
             this.radButton8.TabIndex = 3;
@@ -375,69 +398,49 @@
             this.toolTip1.SetToolTip(this.radButton8, "Disconnect internet Dial-Up");
             this.radButton8.Click += new System.EventHandler(this.RadButton8_Click);
             // 
-            // radButton16
+            // openDVDBtn
             // 
-            this.radButton16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.openDVDBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton16.ForeColor = System.Drawing.Color.Black;
-            this.radButton16.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96;
-            this.radButton16.Location = new System.Drawing.Point(189, 16);
-            this.radButton16.Name = "radButton16";
-            this.radButton16.Size = new System.Drawing.Size(182, 42);
-            this.radButton16.TabIndex = 1;
-            this.radButton16.Text = "Close DVD RW Drive";
-            this.radButton16.ThemeName = "FluentDark";
-            this.radButton16.Click += new System.EventHandler(this.RadButton16_Click);
+            this.openDVDBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.openDVDBtn.ForeColor = System.Drawing.Color.Black;
+            this.openDVDBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96__1_1;
+            this.openDVDBtn.Location = new System.Drawing.Point(3, 16);
+            this.openDVDBtn.Name = "openDVDBtn";
+            this.openDVDBtn.Size = new System.Drawing.Size(182, 42);
+            this.openDVDBtn.TabIndex = 0;
+            this.openDVDBtn.Text = "Open DVD RW Drive";
+            this.openDVDBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.openDVDBtn, "Open DVD RW Drive");
+            this.openDVDBtn.Click += new System.EventHandler(this.openDVDBtn_Click);
             // 
-            // radButton5
+            // insProgBtn
             // 
-            this.radButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.insProgBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton5.ForeColor = System.Drawing.Color.Black;
-            this.radButton5.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cd_96__1_1;
-            this.radButton5.Location = new System.Drawing.Point(3, 16);
-            this.radButton5.Name = "radButton5";
-            this.radButton5.Size = new System.Drawing.Size(182, 42);
-            this.radButton5.TabIndex = 0;
-            this.radButton5.Text = "Open DVD RW Drive";
-            this.radButton5.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton5, "Open DVD RW Drive");
-            this.radButton5.Click += new System.EventHandler(this.RadButton5_Click);
-            // 
-            // radButton15
-            // 
-            this.radButton15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton15.ForeColor = System.Drawing.Color.Black;
-            this.radButton15.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
-            this.radButton15.Location = new System.Drawing.Point(441, 122);
-            this.radButton15.Name = "radButton15";
-            this.radButton15.Size = new System.Drawing.Size(182, 42);
-            this.radButton15.TabIndex = 4;
-            this.radButton15.Text = "Installed Programs";
-            this.radButton15.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton15, "Installed Programs");
-            this.radButton15.Click += new System.EventHandler(this.RadButton15_Click);
+            this.insProgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.insProgBtn.ForeColor = System.Drawing.Color.Black;
+            this.insProgBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
+            this.insProgBtn.Location = new System.Drawing.Point(627, 73);
+            this.insProgBtn.Name = "insProgBtn";
+            this.insProgBtn.Size = new System.Drawing.Size(182, 42);
+            this.insProgBtn.TabIndex = 4;
+            this.insProgBtn.Text = "Installed Programs";
+            this.insProgBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.insProgBtn, "Installed Programs");
+            this.insProgBtn.Click += new System.EventHandler(this.insProgBtn_Click);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // tmrh
-            // 
-            this.tmrh.Interval = 1000;
-            this.tmrh.Tick += new System.EventHandler(this.tmrh_Tick);
-            // 
             // WM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 478);
-            this.Controls.Add(this.radButton15);
+            this.Controls.Add(this.insProgBtn);
             this.Controls.Add(this.radPanel4);
             this.Controls.Add(this.radPanel3);
             this.Controls.Add(this.radPanel2);
@@ -446,11 +449,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "WM";
-            this.Opacity = 0.97D;
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
+            this.Opacity = 0.99D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YP Windows Manager";
             this.ThemeName = "Fluent";
@@ -459,10 +458,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            this.radPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
             this.radPanel2.ResumeLayout(false);
             this.radPanel2.PerformLayout();
@@ -470,19 +470,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
             this.radPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
             this.radPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.printersList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appStnBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptyRecycleBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.openDVDBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.insProgBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -491,33 +491,33 @@
         #endregion
         private Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme1;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
-        private Telerik.WinControls.UI.RadButton radButton1;
-        private Telerik.WinControls.UI.RadButton radButton2;
-        private Telerik.WinControls.UI.RadButton radButton3;
-        private Telerik.WinControls.UI.RadButton radButton4;
-        private Telerik.WinControls.UI.RadButton radButton5;
-        private Telerik.WinControls.UI.RadButton radButton6;
+        private Telerik.WinControls.UI.RadButton shutdownBtn;
+        private Telerik.WinControls.UI.RadButton singoutBtn;
+        private Telerik.WinControls.UI.RadButton logcancellBtn;
+        private Telerik.WinControls.UI.RadButton restartBtn;
+        private Telerik.WinControls.UI.RadButton openDVDBtn;
+        private Telerik.WinControls.UI.RadButton emptyRecycleBtn;
         private Telerik.WinControls.UI.RadButton radButton7;
         private Telerik.WinControls.UI.RadTextBox radTextBox1;
         private Telerik.WinControls.UI.RadButton radButton8;
-        private Telerik.WinControls.UI.RadButton radButton9;
-        private Telerik.WinControls.UI.RadButton radButton10;
-        private Telerik.WinControls.UI.RadButton radButton11;
+        private Telerik.WinControls.UI.RadButton sysInfoBtn;
+        private Telerik.WinControls.UI.RadButton appStnBtn;
+        private Telerik.WinControls.UI.RadButton refreshBtn;
         private Telerik.WinControls.UI.RadPanel radPanel1;
-        private Telerik.WinControls.UI.RadButton radButton12;
+        private Telerik.WinControls.UI.RadButton checkHealthBtn;
         private Telerik.WinControls.UI.RadButton radButton13;
         private Telerik.WinControls.UI.RadPanel radPanel2;
-        private Telerik.WinControls.UI.RadButton radButton14;
+        private Telerik.WinControls.UI.RadButton aboutBtn;
         private Telerik.WinControls.UI.RadPanel radPanel3;
         private Telerik.WinControls.UI.RadPanel radPanel4;
-        private Telerik.WinControls.UI.RadButton radButton15;
+        private Telerik.WinControls.UI.RadButton insProgBtn;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
         private Telerik.WinControls.UI.RadListView printersList;
-        private Telerik.WinControls.UI.RadButton radButton16;
-        private System.Windows.Forms.Timer tmrh;
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme2;
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
+        private System.Windows.Forms.Label bChargeInfo;
+        private Telerik.WinControls.UI.RadButton cleanTmpBtn;
     }
 }
 
