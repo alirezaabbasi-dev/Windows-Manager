@@ -329,7 +329,7 @@
             this.cleanTmpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.cleanTmpBtn.ForeColor = System.Drawing.Color.Black;
             this.cleanTmpBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_cleaner_32;
-            this.cleanTmpBtn.Location = new System.Drawing.Point(189, 112);
+            this.cleanTmpBtn.Location = new System.Drawing.Point(189, 110);
             this.cleanTmpBtn.Name = "cleanTmpBtn";
             this.cleanTmpBtn.Size = new System.Drawing.Size(182, 42);
             this.cleanTmpBtn.TabIndex = 6;
@@ -346,9 +346,9 @@
             listViewDataItem1.Text = "Printers:";
             this.printersList.Items.AddRange(new Telerik.WinControls.UI.ListViewDataItem[] {
             listViewDataItem1});
-            this.printersList.Location = new System.Drawing.Point(3, 160);
+            this.printersList.Location = new System.Drawing.Point(3, 158);
             this.printersList.Name = "printersList";
-            this.printersList.Size = new System.Drawing.Size(368, 277);
+            this.printersList.Size = new System.Drawing.Size(368, 279);
             this.printersList.TabIndex = 5;
             this.printersList.ThemeName = "TelerikMetroBlue";
             this.printersList.SelectedItemChanged += new System.EventHandler(this.printersList_SelectedItemChanged);
@@ -360,7 +360,7 @@
             this.appStnBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.appStnBtn.ForeColor = System.Drawing.Color.Black;
             this.appStnBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_gears_96;
-            this.appStnBtn.Location = new System.Drawing.Point(3, 112);
+            this.appStnBtn.Location = new System.Drawing.Point(3, 110);
             this.appStnBtn.Name = "appStnBtn";
             this.appStnBtn.Size = new System.Drawing.Size(182, 42);
             this.appStnBtn.TabIndex = 4;
@@ -445,6 +445,7 @@
             this.Controls.Add(this.radPanel3);
             this.Controls.Add(this.radPanel2);
             this.Controls.Add(this.radPanel1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

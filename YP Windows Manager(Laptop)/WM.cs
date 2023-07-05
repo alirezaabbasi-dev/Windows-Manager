@@ -25,24 +25,59 @@ namespace YP_Windows_Manager_Computer_
         }
         public WM()
         {
-          
             InitializeComponent();
+
+            // Subscribe to the Microsoft.Win32.SystemEvents.DisplaySettingsChanged event to detect theme changes
+          //  SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-                GetInstalledPrinters();
-                this.ThemeName = fluentTheme1.ThemeName;
-                radPanel1.ThemeName = fluentTheme1.ThemeName;
-                radPanel2.ThemeName = fluentTheme1.ThemeName;
-                radPanel3.ThemeName = fluentTheme1.ThemeName;
-                radPanel4.ThemeName = fluentTheme1.ThemeName;
+            // Read the registry key to determine the current theme
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
 
-                PowerStatus powerStatus = SystemInformation.PowerStatus;
-                int batteryLevel = (int)(powerStatus.BatteryLifePercent* 100);
-                bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        // Apply dark mode styles
+                        BackColor = System.Drawing.Color.Black;
+                        ForeColor = System.Drawing.Color.White;
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                       // BackColor = System.Drawing.SystemColors.Control;
+                        //ForeColor = System.Drawing.SystemColors.ControlText;
+
+
+                        this.ThemeName = fluentDarkTheme1.ThemeName;
+                        radPanel1.ThemeName = fluentDarkTheme1.ThemeName;
+                        radPanel2.ThemeName = fluentDarkTheme1.ThemeName;
+                        radPanel3.ThemeName = fluentDarkTheme1.ThemeName;
+                        radPanel4.ThemeName = fluentDarkTheme1.ThemeName;
+                    }
+
+                    //WM
+                    GetInstalledPrinters();
+                    this.ThemeName = fluentTheme1.ThemeName;
+                    radPanel1.ThemeName = fluentTheme1.ThemeName;
+                    radPanel2.ThemeName = fluentTheme1.ThemeName;
+                    radPanel3.ThemeName = fluentTheme1.ThemeName;
+                    radPanel4.ThemeName = fluentTheme1.ThemeName;
+
+                    PowerStatus powerStatus = SystemInformation.PowerStatus;
+                    int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
+                    bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
+                }
+            }
         }
-        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+
+            [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath,
           RecycleFlags dwFlags);
 
