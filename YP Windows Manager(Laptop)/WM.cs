@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
-     using Telerik.WinControls.UI;
+using Telerik.WinControls.UI;
 using System.Drawing.Printing;
 #pragma warning disable CS0105 // Using directive appeared previously in this namespace
 #pragma warning restore CS0105 // Using directive appeared previously in this namespace
@@ -28,7 +28,7 @@ namespace YP_Windows_Manager_Computer_
             InitializeComponent();
 
             // Subscribe to the Microsoft.Win32.SystemEvents.DisplaySettingsChanged event to detect theme changes
-          //  SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
+            //  SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,50 +36,50 @@ namespace YP_Windows_Manager_Computer_
             // Read the registry key to determine the current theme
             using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
             {
-                if (key != null)
-                {
-                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
-                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+                /*if (key != null)
+                  {
+                      // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                      int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
 
-                    // Check if dark mode is enabled
-                    if (appsUseLightTheme == 0)
-                    {
-                        // Apply dark mode styles
-                        BackColor = System.Drawing.Color.Black;
-                        ForeColor = System.Drawing.Color.White;
-                    }
-                    else
-                    {
-                        // Apply light mode styles
-                       // BackColor = System.Drawing.SystemColors.Control;
-                        //ForeColor = System.Drawing.SystemColors.ControlText;
+                      // Check if dark mode is enabled
+                      if (appsUseLightTheme == 0)
+                      {
+                          // Apply dark mode styles
+                          BackColor = System.Drawing.Color.Black;
+                          ForeColor = System.Drawing.Color.White;
+                      }
+                      else
+                      {
+                          // Apply light mode styles
+                         // BackColor = System.Drawing.SystemColors.Control;
+                          //ForeColor = System.Drawing.SystemColors.ControlText;
 
 
-                        this.ThemeName = fluentDarkTheme1.ThemeName;
-                        radPanel1.ThemeName = fluentDarkTheme1.ThemeName;
-                        radPanel2.ThemeName = fluentDarkTheme1.ThemeName;
-                        radPanel3.ThemeName = fluentDarkTheme1.ThemeName;
-                        radPanel4.ThemeName = fluentDarkTheme1.ThemeName;
-                    }
+                          this.ThemeName = fluentDarkTheme1.ThemeName;
+                          radPanel1.ThemeName = fluentDarkTheme1.ThemeName;
+                          radPanel2.ThemeName = fluentDarkTheme1.ThemeName;
+                          radPanel3.ThemeName = fluentDarkTheme1.ThemeName;
+                          radPanel4.ThemeName = fluentDarkTheme1.ThemeName;
+                      }*/
 
-                    //WM
-                    GetInstalledPrinters();
-                    this.ThemeName = fluentTheme1.ThemeName;
-                    radPanel1.ThemeName = fluentTheme1.ThemeName;
-                    radPanel2.ThemeName = fluentTheme1.ThemeName;
-                    radPanel3.ThemeName = fluentTheme1.ThemeName;
-                    radPanel4.ThemeName = fluentTheme1.ThemeName;
+                //WM
+                GetInstalledPrinters();
+                this.ThemeName = fluentTheme1.ThemeName;
+                radPanel1.ThemeName = fluentTheme1.ThemeName;
+                radPanel2.ThemeName = fluentTheme1.ThemeName;
+                radPanel3.ThemeName = fluentTheme1.ThemeName;
+                radPanel4.ThemeName = fluentTheme1.ThemeName;
 
-                    PowerStatus powerStatus = SystemInformation.PowerStatus;
-                    int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
-                    bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
-                }
+                PowerStatus powerStatus = SystemInformation.PowerStatus;
+                int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
+                bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
+                // }
             }
         }
 
-            [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwnd, string pszRootPath,
-          RecycleFlags dwFlags);
+      RecycleFlags dwFlags);
 
         private void shutdownBtn_Click(object sender, EventArgs e)
         {
@@ -196,8 +196,8 @@ namespace YP_Windows_Manager_Computer_
         }
 
         private void insProgBtn_Click(object sender, EventArgs e)
-        {   
-       installedAppFrm installedApp = new installedAppFrm();
+        {
+            installedAppFrm installedApp = new installedAppFrm();
             installedApp.Show();
             this.Hide();
         }
@@ -211,7 +211,7 @@ namespace YP_Windows_Manager_Computer_
         PowerStatus power = SystemInformation.PowerStatus;
         private void Timer1_Tick(object sender, EventArgs e)
         {
-               
+
         }
         private String Getvalue;
         private void Button1_Click(object sender, EventArgs e)
@@ -232,7 +232,7 @@ namespace YP_Windows_Manager_Computer_
 
         private void Button2_Click(object sender, EventArgs e)
         {
-     
+
         }
 
         private void RadLabel1_Click(object sender, EventArgs e)
@@ -242,7 +242,7 @@ namespace YP_Windows_Manager_Computer_
 
         private void RadTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar==(char )13)
+            if (e.KeyChar == (char)13)
             {
                 System.Diagnostics.Process.Start("iexplore.exe", "https://" + radTextBox1.Text);
             }
@@ -282,4 +282,3 @@ namespace YP_Windows_Manager_Computer_
 
 
 
- 
