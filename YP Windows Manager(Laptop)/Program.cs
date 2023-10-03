@@ -21,13 +21,13 @@ namespace YP_Windows_Manager_Computer_
 
             bool runed;
 
-            System.Threading.Mutex mtx = new System.Threading.Mutex(true, "yp-wm-CPTP-ver:---_2.0.2", out runed);
+            System.Threading.Mutex mtx = new System.Threading.Mutex(true, "yp-wm-ver:3.0.0", out runed);
 
             if (!runed)
             {
                 RadMessageBox.ThemeName = flnt.ThemeName;
 
-                Telerik.WinControls.RadMessageBox.Show("The " + "YP Windows Manager(Laptop)" + " is running", "YP", MessageBoxButtons.OK);
+                Telerik.WinControls.RadMessageBox.Show("The " + "YP Windows Manager" + " is running", "YP", MessageBoxButtons.OK);
             }
             else
             {

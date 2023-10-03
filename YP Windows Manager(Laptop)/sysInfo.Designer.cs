@@ -34,7 +34,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.sysInfoList = new Telerik.WinControls.UI.RadListView();
             this.telerikMetroTouchTheme1 = new Telerik.WinControls.Themes.TelerikMetroTouchTheme();
+            this.gpuAbout = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoList)).BeginInit();
+            this.sysInfoList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 428);
+            this.label1.Location = new System.Drawing.Point(15, 428);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 17);
             this.label1.TabIndex = 1;
@@ -57,12 +59,22 @@
             // 
             // sysInfoList
             // 
+            this.sysInfoList.Controls.Add(this.gpuAbout);
             this.sysInfoList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sysInfoList.Location = new System.Drawing.Point(0, 0);
             this.sysInfoList.Name = "sysInfoList";
             this.sysInfoList.Size = new System.Drawing.Size(720, 454);
             this.sysInfoList.TabIndex = 2;
             this.sysInfoList.ThemeName = "TelerikMetroBlue";
+            // 
+            // gpuAbout
+            // 
+            this.gpuAbout.AutoSize = true;
+            this.gpuAbout.BackColor = System.Drawing.Color.Transparent;
+            this.gpuAbout.Location = new System.Drawing.Point(484, 12);
+            this.gpuAbout.Name = "gpuAbout";
+            this.gpuAbout.Size = new System.Drawing.Size(0, 13);
+            this.gpuAbout.TabIndex = 0;
             // 
             // sysInfo
             // 
@@ -75,16 +87,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "sysInfo";
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Information";
-            this.ThemeName = "FluentDark";
+            this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoList)).EndInit();
+            this.sysInfoList.ResumeLayout(false);
+            this.sysInfoList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,5 +106,6 @@
         private System.Windows.Forms.Timer timer1;
         private Telerik.WinControls.UI.RadListView sysInfoList;
         private Telerik.WinControls.Themes.TelerikMetroTouchTheme telerikMetroTouchTheme1;
+        private System.Windows.Forms.Label gpuAbout;
     }
 }
