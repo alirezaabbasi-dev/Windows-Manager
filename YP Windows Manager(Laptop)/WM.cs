@@ -33,47 +33,58 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Color colour = ColorTranslator.FromHtml("#212121");
+            Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
+
             // Read the registry key to determine the current theme
             using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
             {
-                /*if (key != null)
-                  {
-                      // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
-                      int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
 
-                      // Check if dark mode is enabled
-                      if (appsUseLightTheme == 0)
-                      {
-                          // Apply dark mode styles
-                          BackColor = System.Drawing.Color.Black;
-                          ForeColor = System.Drawing.Color.White;
-                      }
-                      else
-                      {
-                          // Apply light mode styles
-                         // BackColor = System.Drawing.SystemColors.Control;
-                          //ForeColor = System.Drawing.SystemColors.ControlText;
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        // Apply dark mode styles
+                        this.ThemeName = fluentDarkTheme2.ThemeName;
+                        shutdownBtn.ThemeName = fluentDarkTheme2.ThemeName;
+                        this.ThemeName = fluentDarkTheme1.ThemeName;                       
+                        radPanel1.BackColor = colour;
+                        radPanel2.BackColor = colour;
+                        radPanel3.BackColor = colour;
+                        radPanel4.BackColor = colour;
+                        printersList.ThemeName = fluentDarkTheme1.ThemeName;
+                        bChargeInfo.ForeColor = Color.White;
+                        bChargeInfo.BackColor = colour;
+
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                        // BackColor = System.Drawing.SystemColors.Control;
+                        //ForeColor = System.Drawing.SystemColors.ControlText;
+
+                        this.ThemeName =fluentTheme1.ThemeName;
+                        radPanel1.ThemeName =fluentTheme1.ThemeName;
+                        radPanel2.ThemeName =fluentTheme1.ThemeName;
+                        radPanel3.ThemeName =fluentTheme1.ThemeName;
+                        radPanel4.ThemeName =fluentTheme1.ThemeName;
+                        printersList.ThemeName = fluentTheme1.ThemeName;
+                        bChargeInfo.ForeColor = Color.Black;
+                        bChargeInfo.BackColor= L_mode_colour;
 
 
-                          this.ThemeName = fluentDarkTheme1.ThemeName;
-                          radPanel1.ThemeName = fluentDarkTheme1.ThemeName;
-                          radPanel2.ThemeName = fluentDarkTheme1.ThemeName;
-                          radPanel3.ThemeName = fluentDarkTheme1.ThemeName;
-                          radPanel4.ThemeName = fluentDarkTheme1.ThemeName;
-                      }*/
-
+                    }
+                }
                 //WM
                 GetInstalledPrinters();
-                this.ThemeName = fluentTheme1.ThemeName;
-                radPanel1.ThemeName = fluentTheme1.ThemeName;
-                radPanel2.ThemeName = fluentTheme1.ThemeName;
-                radPanel3.ThemeName = fluentTheme1.ThemeName;
-                radPanel4.ThemeName = fluentTheme1.ThemeName;
-
+          
                 PowerStatus powerStatus = SystemInformation.PowerStatus;
                 int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
                 bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
-                // }
+               
             }
         }
 

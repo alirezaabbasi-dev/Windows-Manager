@@ -119,7 +119,8 @@
             // bChargeInfo
             // 
             this.bChargeInfo.AutoSize = true;
-            this.bChargeInfo.Location = new System.Drawing.Point(19, 153);
+            this.bChargeInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.bChargeInfo.Location = new System.Drawing.Point(24, 156);
             this.bChargeInfo.Name = "bChargeInfo";
             this.bChargeInfo.Size = new System.Drawing.Size(35, 13);
             this.bChargeInfo.TabIndex = 5;
@@ -133,9 +134,9 @@
             this.shutdownBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.shutdownBtn.ForeColor = System.Drawing.Color.Black;
             this.shutdownBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_button_961;
-            this.shutdownBtn.Location = new System.Drawing.Point(17, 16);
+            this.shutdownBtn.Location = new System.Drawing.Point(27, 22);
             this.shutdownBtn.Name = "shutdownBtn";
-            this.shutdownBtn.Size = new System.Drawing.Size(182, 64);
+            this.shutdownBtn.Size = new System.Drawing.Size(180, 60);
             this.shutdownBtn.TabIndex = 0;
             this.shutdownBtn.Text = "Shut Down pc";
             this.shutdownBtn.ThemeName = "FluentDark";
@@ -149,9 +150,9 @@
             this.restartBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.restartBtn.ForeColor = System.Drawing.Color.Black;
             this.restartBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_reset_96__1_;
-            this.restartBtn.Location = new System.Drawing.Point(205, 16);
+            this.restartBtn.Location = new System.Drawing.Point(213, 22);
             this.restartBtn.Name = "restartBtn";
-            this.restartBtn.Size = new System.Drawing.Size(182, 64);
+            this.restartBtn.Size = new System.Drawing.Size(180, 60);
             this.restartBtn.TabIndex = 1;
             this.restartBtn.Text = "Restart pc";
             this.restartBtn.ThemeName = "FluentDark";
@@ -165,9 +166,9 @@
             this.singoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.singoutBtn.ForeColor = System.Drawing.Color.Black;
             this.singoutBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_96;
-            this.singoutBtn.Location = new System.Drawing.Point(17, 86);
+            this.singoutBtn.Location = new System.Drawing.Point(27, 88);
             this.singoutBtn.Name = "singoutBtn";
-            this.singoutBtn.Size = new System.Drawing.Size(182, 64);
+            this.singoutBtn.Size = new System.Drawing.Size(180, 60);
             this.singoutBtn.TabIndex = 2;
             this.singoutBtn.Text = "Sing out";
             this.singoutBtn.ThemeName = "FluentDark";
@@ -180,9 +181,9 @@
             this.logcancellBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.logcancellBtn.ForeColor = System.Drawing.Color.Black;
             this.logcancellBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
-            this.logcancellBtn.Location = new System.Drawing.Point(205, 86);
+            this.logcancellBtn.Location = new System.Drawing.Point(213, 88);
             this.logcancellBtn.Name = "logcancellBtn";
-            this.logcancellBtn.Size = new System.Drawing.Size(182, 64);
+            this.logcancellBtn.Size = new System.Drawing.Size(180, 60);
             this.logcancellBtn.TabIndex = 3;
             this.logcancellBtn.Text = "    Logoff Cancell";
             this.logcancellBtn.ThemeName = "FluentDark";
@@ -348,9 +349,8 @@
             listViewDataItem1});
             this.printersList.Location = new System.Drawing.Point(3, 158);
             this.printersList.Name = "printersList";
-            this.printersList.Size = new System.Drawing.Size(368, 279);
+            this.printersList.Size = new System.Drawing.Size(368, 293);
             this.printersList.TabIndex = 5;
-            this.printersList.ThemeName = "TelerikMetroBlue";
             this.printersList.SelectedItemChanged += new System.EventHandler(this.printersList_SelectedItemChanged);
             // 
             // appStnBtn
@@ -452,7 +452,7 @@
             this.Name = "WM";
             this.Opacity = 0.99D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YP Windows Manager";
+            this.Text = "YP Windows Manager (beta)";
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);

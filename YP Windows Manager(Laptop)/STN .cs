@@ -28,12 +28,12 @@ namespace YP_Windows_Manager_Computer_
 
         private void radButton1_Click(object sender, EventArgs e)
         {
-            addreg.SetValue("yp-wm-ver:---_2.0.1", Application.ExecutablePath.ToString());
+            addreg.SetValue("yp-wm-ver:_2.0.1", Application.ExecutablePath.ToString());
         }
 
         private void radButton2_Click(object sender, EventArgs e)
         {
-            remreg.DeleteValue("yp-wm-ver:---_2.0.1", false);
+            remreg.DeleteValue("yp-wm-ver:_2.0.1", false);
         }
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
