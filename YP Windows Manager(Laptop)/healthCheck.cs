@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static MetroFramework.Drawing.MetroPaint;
 
 namespace YP_Windows_Manager_Computer_
 {
     public partial class healthCheck : Telerik.WinControls.UI.RadForm
     {
-       
         public healthCheck()
         {
         
@@ -90,9 +90,7 @@ namespace YP_Windows_Manager_Computer_
         }
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
-        {
-       
-        
+        { 
                 WM frm = new WM();
                 frm.Show();
             

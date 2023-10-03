@@ -33,88 +33,88 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WM));
             this.telerikMetroBlueTheme1 = new Telerik.WinControls.Themes.TelerikMetroBlueTheme();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
-            this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
-            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.WEB_TXT_INPUT = new Telerik.WinControls.UI.RadTextBox();
+            this.Panel1 = new Telerik.WinControls.UI.RadPanel();
             this.bChargeInfo = new System.Windows.Forms.Label();
             this.shutdownBtn = new Telerik.WinControls.UI.RadButton();
             this.restartBtn = new Telerik.WinControls.UI.RadButton();
             this.singoutBtn = new Telerik.WinControls.UI.RadButton();
             this.logcancellBtn = new Telerik.WinControls.UI.RadButton();
-            this.radPanel2 = new Telerik.WinControls.UI.RadPanel();
-            this.radButton13 = new Telerik.WinControls.UI.RadButton();
-            this.radButton7 = new Telerik.WinControls.UI.RadButton();
-            this.radPanel3 = new Telerik.WinControls.UI.RadPanel();
+            this.Panel3 = new Telerik.WinControls.UI.RadPanel();
+            this.OpenWeb_Btn = new Telerik.WinControls.UI.RadButton();
+            this.HomePage_Btn = new Telerik.WinControls.UI.RadButton();
+            this.Panel4 = new Telerik.WinControls.UI.RadPanel();
             this.refreshBtn = new Telerik.WinControls.UI.RadButton();
             this.checkHealthBtn = new Telerik.WinControls.UI.RadButton();
             this.aboutBtn = new Telerik.WinControls.UI.RadButton();
             this.sysInfoBtn = new Telerik.WinControls.UI.RadButton();
-            this.radPanel4 = new Telerik.WinControls.UI.RadPanel();
+            this.Panel2 = new Telerik.WinControls.UI.RadPanel();
             this.cleanTmpBtn = new Telerik.WinControls.UI.RadButton();
             this.printersList = new Telerik.WinControls.UI.RadListView();
             this.appStnBtn = new Telerik.WinControls.UI.RadButton();
             this.emptyRecycleBtn = new Telerik.WinControls.UI.RadButton();
-            this.radButton8 = new Telerik.WinControls.UI.RadButton();
+            this.disconnect_dial_Btn = new Telerik.WinControls.UI.RadButton();
             this.openDVDBtn = new Telerik.WinControls.UI.RadButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.insProgBtn = new Telerik.WinControls.UI.RadButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.fluentDarkTheme2 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.radPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WEB_TXT_INPUT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel1)).BeginInit();
+            this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).BeginInit();
-            this.radPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).BeginInit();
-            this.radPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel3)).BeginInit();
+            this.Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OpenWeb_Btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomePage_Btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel4)).BeginInit();
+            this.Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).BeginInit();
-            this.radPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel2)).BeginInit();
+            this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.printersList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appStnBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptyRecycleBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disconnect_dial_Btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.openDVDBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.insProgBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radTextBox1
+            // WEB_TXT_INPUT
             // 
-            this.radTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.radTextBox1.Location = new System.Drawing.Point(22, 24);
-            this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(370, 24);
-            this.radTextBox1.TabIndex = 0;
-            this.radTextBox1.Text = "t.me/ypappchannel";
-            this.radTextBox1.ThemeName = "FluentDark";
-            this.radTextBox1.TextChanged += new System.EventHandler(this.RadTextBox1_TextChanged);
-            this.radTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RadTextBox1_KeyPress);
+            this.WEB_TXT_INPUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.WEB_TXT_INPUT.ForeColor = System.Drawing.Color.Black;
+            this.WEB_TXT_INPUT.Location = new System.Drawing.Point(22, 24);
+            this.WEB_TXT_INPUT.Name = "WEB_TXT_INPUT";
+            this.WEB_TXT_INPUT.Size = new System.Drawing.Size(370, 24);
+            this.WEB_TXT_INPUT.TabIndex = 0;
+            this.WEB_TXT_INPUT.Text = "t.me/ypappchannel";
+            this.WEB_TXT_INPUT.ThemeName = "FluentDark";
+            this.WEB_TXT_INPUT.TextChanged += new System.EventHandler(this.RadTextBox1_TextChanged);
+            this.WEB_TXT_INPUT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RadTextBox1_KeyPress);
             // 
-            // radPanel1
+            // Panel1
             // 
-            this.radPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.radPanel1.Controls.Add(this.bChargeInfo);
-            this.radPanel1.Controls.Add(this.shutdownBtn);
-            this.radPanel1.Controls.Add(this.restartBtn);
-            this.radPanel1.Controls.Add(this.singoutBtn);
-            this.radPanel1.Controls.Add(this.logcancellBtn);
-            this.radPanel1.Location = new System.Drawing.Point(12, 10);
-            this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(420, 178);
-            this.radPanel1.TabIndex = 2;
+            this.Panel1.Controls.Add(this.bChargeInfo);
+            this.Panel1.Controls.Add(this.shutdownBtn);
+            this.Panel1.Controls.Add(this.restartBtn);
+            this.Panel1.Controls.Add(this.singoutBtn);
+            this.Panel1.Controls.Add(this.logcancellBtn);
+            this.Panel1.Location = new System.Drawing.Point(12, 10);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(420, 178);
+            this.Panel1.TabIndex = 2;
             // 
             // bChargeInfo
             // 
@@ -190,60 +190,60 @@
             this.toolTip1.SetToolTip(this.logcancellBtn, "Logoff cancell");
             this.logcancellBtn.Click += new System.EventHandler(this.logcancellBtn_Click);
             // 
-            // radPanel2
+            // Panel3
             // 
-            this.radPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radPanel2.Controls.Add(this.radTextBox1);
-            this.radPanel2.Controls.Add(this.radButton13);
-            this.radPanel2.Controls.Add(this.radButton7);
-            this.radPanel2.Location = new System.Drawing.Point(12, 194);
-            this.radPanel2.Name = "radPanel2";
-            this.radPanel2.Size = new System.Drawing.Size(420, 125);
-            this.radPanel2.TabIndex = 1;
+            this.Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel3.Controls.Add(this.WEB_TXT_INPUT);
+            this.Panel3.Controls.Add(this.OpenWeb_Btn);
+            this.Panel3.Controls.Add(this.HomePage_Btn);
+            this.Panel3.Location = new System.Drawing.Point(12, 194);
+            this.Panel3.Name = "Panel3";
+            this.Panel3.Size = new System.Drawing.Size(420, 125);
+            this.Panel3.TabIndex = 1;
             // 
-            // radButton13
+            // OpenWeb_Btn
             // 
-            this.radButton13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.OpenWeb_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton13.ForeColor = System.Drawing.Color.Black;
-            this.radButton13.Image = global::YP_Windows_Manager.Properties.Resources.icons8_website_96__1_;
-            this.radButton13.Location = new System.Drawing.Point(210, 54);
-            this.radButton13.Name = "radButton13";
-            this.radButton13.Size = new System.Drawing.Size(182, 42);
-            this.radButton13.TabIndex = 2;
-            this.radButton13.Text = "Open website";
-            this.radButton13.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton13, "Open website");
-            this.radButton13.Click += new System.EventHandler(this.RadButton13_Click);
+            this.OpenWeb_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.OpenWeb_Btn.ForeColor = System.Drawing.Color.Black;
+            this.OpenWeb_Btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_website_96__1_;
+            this.OpenWeb_Btn.Location = new System.Drawing.Point(210, 54);
+            this.OpenWeb_Btn.Name = "OpenWeb_Btn";
+            this.OpenWeb_Btn.Size = new System.Drawing.Size(182, 42);
+            this.OpenWeb_Btn.TabIndex = 2;
+            this.OpenWeb_Btn.Text = "Open website";
+            this.OpenWeb_Btn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.OpenWeb_Btn, "Open website");
+            this.OpenWeb_Btn.Click += new System.EventHandler(this.RadButton13_Click);
             // 
-            // radButton7
+            // HomePage_Btn
             // 
-            this.radButton7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.HomePage_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton7.ForeColor = System.Drawing.Color.Black;
-            this.radButton7.Image = global::YP_Windows_Manager.Properties.Resources.icons8_home_96__1_;
-            this.radButton7.Location = new System.Drawing.Point(22, 54);
-            this.radButton7.Name = "radButton7";
-            this.radButton7.Size = new System.Drawing.Size(182, 42);
-            this.radButton7.TabIndex = 1;
-            this.radButton7.Text = "Home Page";
-            this.radButton7.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton7, "Home page");
-            this.radButton7.Click += new System.EventHandler(this.RadButton7_Click);
+            this.HomePage_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.HomePage_Btn.ForeColor = System.Drawing.Color.Black;
+            this.HomePage_Btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_home_96__1_;
+            this.HomePage_Btn.Location = new System.Drawing.Point(22, 54);
+            this.HomePage_Btn.Name = "HomePage_Btn";
+            this.HomePage_Btn.Size = new System.Drawing.Size(182, 42);
+            this.HomePage_Btn.TabIndex = 1;
+            this.HomePage_Btn.Text = "Home Page";
+            this.HomePage_Btn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.HomePage_Btn, "Home page");
+            this.HomePage_Btn.Click += new System.EventHandler(this.RadButton7_Click);
             // 
-            // radPanel3
+            // Panel4
             // 
-            this.radPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radPanel3.Controls.Add(this.refreshBtn);
-            this.radPanel3.Controls.Add(this.checkHealthBtn);
-            this.radPanel3.Controls.Add(this.aboutBtn);
-            this.radPanel3.Controls.Add(this.sysInfoBtn);
-            this.radPanel3.Location = new System.Drawing.Point(12, 325);
-            this.radPanel3.Name = "radPanel3";
-            this.radPanel3.Size = new System.Drawing.Size(420, 139);
-            this.radPanel3.TabIndex = 0;
+            this.Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel4.Controls.Add(this.refreshBtn);
+            this.Panel4.Controls.Add(this.checkHealthBtn);
+            this.Panel4.Controls.Add(this.aboutBtn);
+            this.Panel4.Controls.Add(this.sysInfoBtn);
+            this.Panel4.Location = new System.Drawing.Point(12, 325);
+            this.Panel4.Name = "Panel4";
+            this.Panel4.Size = new System.Drawing.Size(420, 139);
+            this.Panel4.TabIndex = 0;
             // 
             // refreshBtn
             // 
@@ -307,21 +307,21 @@
             this.toolTip1.SetToolTip(this.sysInfoBtn, "System Information");
             this.sysInfoBtn.Click += new System.EventHandler(this.sysInfoBtn_Click);
             // 
-            // radPanel4
+            // Panel2
             // 
-            this.radPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radPanel4.Controls.Add(this.cleanTmpBtn);
-            this.radPanel4.Controls.Add(this.printersList);
-            this.radPanel4.Controls.Add(this.appStnBtn);
-            this.radPanel4.Controls.Add(this.emptyRecycleBtn);
-            this.radPanel4.Controls.Add(this.radButton8);
-            this.radPanel4.Controls.Add(this.openDVDBtn);
-            this.radPanel4.Location = new System.Drawing.Point(438, 10);
-            this.radPanel4.Name = "radPanel4";
-            this.radPanel4.Size = new System.Drawing.Size(374, 454);
-            this.radPanel4.TabIndex = 3;
+            this.Panel2.Controls.Add(this.cleanTmpBtn);
+            this.Panel2.Controls.Add(this.printersList);
+            this.Panel2.Controls.Add(this.appStnBtn);
+            this.Panel2.Controls.Add(this.emptyRecycleBtn);
+            this.Panel2.Controls.Add(this.disconnect_dial_Btn);
+            this.Panel2.Controls.Add(this.openDVDBtn);
+            this.Panel2.Location = new System.Drawing.Point(438, 10);
+            this.Panel2.Name = "Panel2";
+            this.Panel2.Size = new System.Drawing.Size(374, 454);
+            this.Panel2.TabIndex = 3;
             // 
             // cleanTmpBtn
             // 
@@ -383,20 +383,20 @@
             this.toolTip1.SetToolTip(this.emptyRecycleBtn, "Empty Recycle Bin");
             this.emptyRecycleBtn.Click += new System.EventHandler(this.emptyRecycleBtn_Click);
             // 
-            // radButton8
+            // disconnect_dial_Btn
             // 
-            this.radButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton8.ForeColor = System.Drawing.Color.Black;
-            this.radButton8.Image = global::YP_Windows_Manager.Properties.Resources.icons8_disconnected_96;
-            this.radButton8.Location = new System.Drawing.Point(189, 16);
-            this.radButton8.Name = "radButton8";
-            this.radButton8.Size = new System.Drawing.Size(182, 42);
-            this.radButton8.TabIndex = 3;
-            this.radButton8.Text = "      Disconnect internet Dial-Up";
-            this.radButton8.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.radButton8, "Disconnect internet Dial-Up");
-            this.radButton8.Click += new System.EventHandler(this.RadButton8_Click);
+            this.disconnect_dial_Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.disconnect_dial_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.disconnect_dial_Btn.ForeColor = System.Drawing.Color.Black;
+            this.disconnect_dial_Btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_disconnected_96;
+            this.disconnect_dial_Btn.Location = new System.Drawing.Point(189, 16);
+            this.disconnect_dial_Btn.Name = "disconnect_dial_Btn";
+            this.disconnect_dial_Btn.Size = new System.Drawing.Size(182, 42);
+            this.disconnect_dial_Btn.TabIndex = 3;
+            this.disconnect_dial_Btn.Text = "      Disconnect internet Dial-Up";
+            this.disconnect_dial_Btn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.disconnect_dial_Btn, "Disconnect internet Dial-Up");
+            this.disconnect_dial_Btn.Click += new System.EventHandler(this.RadButton8_Click);
             // 
             // openDVDBtn
             // 
@@ -441,10 +441,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 478);
             this.Controls.Add(this.insProgBtn);
-            this.Controls.Add(this.radPanel4);
-            this.Controls.Add(this.radPanel3);
-            this.Controls.Add(this.radPanel2);
-            this.Controls.Add(this.radPanel1);
+            this.Controls.Add(this.Panel2);
+            this.Controls.Add(this.Panel4);
+            this.Controls.Add(this.Panel3);
+            this.Controls.Add(this.Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -456,32 +456,32 @@
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
-            this.radPanel1.ResumeLayout(false);
-            this.radPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WEB_TXT_INPUT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel1)).EndInit();
+            this.Panel1.ResumeLayout(false);
+            this.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel2)).EndInit();
-            this.radPanel2.ResumeLayout(false);
-            this.radPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel3)).EndInit();
-            this.radPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Panel3)).EndInit();
+            this.Panel3.ResumeLayout(false);
+            this.Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OpenWeb_Btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomePage_Btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Panel4)).EndInit();
+            this.Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel4)).EndInit();
-            this.radPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Panel2)).EndInit();
+            this.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.printersList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appStnBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptyRecycleBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disconnect_dial_Btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.openDVDBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.insProgBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -498,19 +498,19 @@
         private Telerik.WinControls.UI.RadButton restartBtn;
         private Telerik.WinControls.UI.RadButton openDVDBtn;
         private Telerik.WinControls.UI.RadButton emptyRecycleBtn;
-        private Telerik.WinControls.UI.RadButton radButton7;
-        private Telerik.WinControls.UI.RadTextBox radTextBox1;
-        private Telerik.WinControls.UI.RadButton radButton8;
+        private Telerik.WinControls.UI.RadButton HomePage_Btn;
+        private Telerik.WinControls.UI.RadTextBox WEB_TXT_INPUT;
+        private Telerik.WinControls.UI.RadButton disconnect_dial_Btn;
         private Telerik.WinControls.UI.RadButton sysInfoBtn;
         private Telerik.WinControls.UI.RadButton appStnBtn;
         private Telerik.WinControls.UI.RadButton refreshBtn;
-        private Telerik.WinControls.UI.RadPanel radPanel1;
+        private Telerik.WinControls.UI.RadPanel Panel1;
         private Telerik.WinControls.UI.RadButton checkHealthBtn;
-        private Telerik.WinControls.UI.RadButton radButton13;
-        private Telerik.WinControls.UI.RadPanel radPanel2;
+        private Telerik.WinControls.UI.RadButton OpenWeb_Btn;
+        private Telerik.WinControls.UI.RadPanel Panel3;
         private Telerik.WinControls.UI.RadButton aboutBtn;
-        private Telerik.WinControls.UI.RadPanel radPanel3;
-        private Telerik.WinControls.UI.RadPanel radPanel4;
+        private Telerik.WinControls.UI.RadPanel Panel4;
+        private Telerik.WinControls.UI.RadPanel Panel2;
         private Telerik.WinControls.UI.RadButton insProgBtn;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
