@@ -9,6 +9,7 @@ using System.Drawing.Printing;
 #pragma warning restore CS0105 // Using directive appeared previously in this namespace
 using System.Net.NetworkInformation;
 using MetroFramework;
+using Telerik.WinControls;
 
 namespace YP_Windows_Manager_Computer_
 {
@@ -80,6 +81,8 @@ namespace YP_Windows_Manager_Computer_
                         sysInfoBtn.BackColor = colour;
                         checkHealthBtn.BackColor = colour;
                         aboutBtn.BackColor = colour;
+                        hibernate_btn.BackColor= colour;
+                        sleep_btn.BackColor = colour;
                         //all btn forecolor
                         shutdownBtn.ForeColor= L_mode_colour;
                         restartBtn.ForeColor =  L_mode_colour;
@@ -98,6 +101,8 @@ namespace YP_Windows_Manager_Computer_
                         sysInfoBtn.ForeColor= L_mode_colour;
                         checkHealthBtn.ForeColor= L_mode_colour;
                         aboutBtn.ForeColor= L_mode_colour;
+                        hibernate_btn.ForeColor= L_mode_colour;
+                        sleep_btn.ForeColor= L_mode_colour;
                     }
                     else
                     {
@@ -133,6 +138,8 @@ namespace YP_Windows_Manager_Computer_
                         sysInfoBtn.BackColor = L_mode_colour;
                         checkHealthBtn.BackColor = L_mode_colour;
                         aboutBtn.BackColor = L_mode_colour;
+                        hibernate_btn.BackColor = L_mode_colour;
+                        sleep_btn.BackColor = L_mode_colour;
                         //all btn forecolor
                         shutdownBtn.ForeColor = colour;
                         restartBtn.ForeColor = colour;
@@ -151,15 +158,15 @@ namespace YP_Windows_Manager_Computer_
                         sysInfoBtn.ForeColor = colour;
                         checkHealthBtn.ForeColor = colour;
                         aboutBtn.ForeColor = colour;
+                        hibernate_btn.ForeColor = colour;
+                        sleep_btn.ForeColor = colour;
                     }
                 }
                 //WM
                 GetInstalledPrinters();
-          
                 PowerStatus powerStatus = SystemInformation.PowerStatus;
                 int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
                 bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
-               
             }
         }
 
@@ -362,6 +369,28 @@ namespace YP_Windows_Manager_Computer_
                 }
             */
             System.Diagnostics.Process.Start("cleanmgr");
+        }
+
+        private void hibernate_btn_Click(object sender, EventArgs e)
+        {
+            RadMessageBox.ThemeName=this.ThemeName;
+            DialogResult result = Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in Hibernate mode?", "Hibernate", MessageBoxButtons.YesNo, RadMessageIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.SetSuspendState(PowerState.Hibernate, true, false);
+            }
+        }
+
+        private void sleep_btn_Click(object sender, EventArgs e)
+        {
+            RadMessageBox.ThemeName = this.ThemeName;
+            DialogResult result =Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in Sleep mode?", "Sleep", MessageBoxButtons.YesNo, RadMessageIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.SetSuspendState(PowerState.Suspend, true, false);
+            }
         }
     }
 }

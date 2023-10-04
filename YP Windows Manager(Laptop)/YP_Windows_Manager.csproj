@@ -52,6 +52,7 @@
   <PropertyGroup>
     <StartupObject>YP_Windows_Manager_Computer_.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\YP\YP-buid 219.4\Editing\YP-Calculator\N Series\YP Calculator- latest version\bin\Debug\MetroFramework.dll</HintPath>
@@ -117,6 +118,11 @@
     <Compile Include="installedAppFrm.designer.cs">
       <DependentUpon>installedAppFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="WM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,14 +182,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="waitFrm.resx">
       <DependentUpon>waitFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-system-task-96.ico" />
+    <None Include="Resources\icons8-moon-96.ico" />
+    <None Include="Resources\icons8-hibernate-96.ico" />
+    <None Include="Resources\icons8-hibernate-96.png" />
     <None Include="Resources\icons8-cleaner-32.png" />
     <None Include="Resources\icons8-cd-96.ico" />
     <None Include="Resources\icons8-system-task-96.png" />

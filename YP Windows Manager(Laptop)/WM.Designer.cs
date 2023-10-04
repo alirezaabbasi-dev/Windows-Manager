@@ -35,11 +35,13 @@
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.WEB_TXT_INPUT = new Telerik.WinControls.UI.RadTextBox();
             this.Panel1 = new Telerik.WinControls.UI.RadPanel();
+            this.sleep_btn = new Telerik.WinControls.UI.RadButton();
+            this.hibernate_btn = new Telerik.WinControls.UI.RadButton();
             this.bChargeInfo = new System.Windows.Forms.Label();
             this.shutdownBtn = new Telerik.WinControls.UI.RadButton();
             this.restartBtn = new Telerik.WinControls.UI.RadButton();
-            this.singoutBtn = new Telerik.WinControls.UI.RadButton();
             this.logcancellBtn = new Telerik.WinControls.UI.RadButton();
+            this.singoutBtn = new Telerik.WinControls.UI.RadButton();
             this.Panel3 = new Telerik.WinControls.UI.RadPanel();
             this.OpenWeb_Btn = new Telerik.WinControls.UI.RadButton();
             this.HomePage_Btn = new Telerik.WinControls.UI.RadButton();
@@ -63,10 +65,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.WEB_TXT_INPUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel1)).BeginInit();
             this.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sleep_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hibernate_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel3)).BeginInit();
             this.Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OpenWeb_Btn)).BeginInit();
@@ -104,23 +108,55 @@
             // 
             // Panel1
             // 
-            this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel1.Controls.Add(this.sleep_btn);
+            this.Panel1.Controls.Add(this.hibernate_btn);
             this.Panel1.Controls.Add(this.bChargeInfo);
             this.Panel1.Controls.Add(this.shutdownBtn);
             this.Panel1.Controls.Add(this.restartBtn);
-            this.Panel1.Controls.Add(this.singoutBtn);
             this.Panel1.Controls.Add(this.logcancellBtn);
+            this.Panel1.Controls.Add(this.singoutBtn);
             this.Panel1.Location = new System.Drawing.Point(12, 10);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(420, 178);
             this.Panel1.TabIndex = 2;
             // 
+            // sleep_btn
+            // 
+            this.sleep_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sleep_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.sleep_btn.ForeColor = System.Drawing.Color.Black;
+            this.sleep_btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_moon_961;
+            this.sleep_btn.Location = new System.Drawing.Point(148, 88);
+            this.sleep_btn.Name = "sleep_btn";
+            this.sleep_btn.Size = new System.Drawing.Size(125, 60);
+            this.sleep_btn.TabIndex = 3;
+            this.sleep_btn.Text = "Sleep";
+            this.sleep_btn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.sleep_btn, "Sleep");
+            this.sleep_btn.Click += new System.EventHandler(this.sleep_btn_Click);
+            // 
+            // hibernate_btn
+            // 
+            this.hibernate_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hibernate_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.hibernate_btn.ForeColor = System.Drawing.Color.Black;
+            this.hibernate_btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_hibernate_961;
+            this.hibernate_btn.Location = new System.Drawing.Point(279, 22);
+            this.hibernate_btn.Name = "hibernate_btn";
+            this.hibernate_btn.Size = new System.Drawing.Size(125, 60);
+            this.hibernate_btn.TabIndex = 2;
+            this.hibernate_btn.Text = "Hibernate";
+            this.hibernate_btn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.hibernate_btn, "Hibernate");
+            this.hibernate_btn.Click += new System.EventHandler(this.hibernate_btn_Click);
+            // 
             // bChargeInfo
             // 
             this.bChargeInfo.AutoSize = true;
             this.bChargeInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.bChargeInfo.Location = new System.Drawing.Point(24, 156);
+            this.bChargeInfo.Location = new System.Drawing.Point(17, 153);
             this.bChargeInfo.Name = "bChargeInfo";
             this.bChargeInfo.Size = new System.Drawing.Size(35, 13);
             this.bChargeInfo.TabIndex = 5;
@@ -134,11 +170,11 @@
             this.shutdownBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.shutdownBtn.ForeColor = System.Drawing.Color.Black;
             this.shutdownBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_button_961;
-            this.shutdownBtn.Location = new System.Drawing.Point(27, 22);
+            this.shutdownBtn.Location = new System.Drawing.Point(17, 22);
             this.shutdownBtn.Name = "shutdownBtn";
-            this.shutdownBtn.Size = new System.Drawing.Size(180, 60);
+            this.shutdownBtn.Size = new System.Drawing.Size(125, 60);
             this.shutdownBtn.TabIndex = 0;
-            this.shutdownBtn.Text = "Shut Down pc";
+            this.shutdownBtn.Text = "Shut Down";
             this.shutdownBtn.ThemeName = "FluentDark";
             this.toolTip1.SetToolTip(this.shutdownBtn, "Shut down ");
             this.shutdownBtn.Click += new System.EventHandler(this.shutdownBtn_Click);
@@ -150,14 +186,29 @@
             this.restartBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.restartBtn.ForeColor = System.Drawing.Color.Black;
             this.restartBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_reset_96__1_;
-            this.restartBtn.Location = new System.Drawing.Point(213, 22);
+            this.restartBtn.Location = new System.Drawing.Point(148, 22);
             this.restartBtn.Name = "restartBtn";
-            this.restartBtn.Size = new System.Drawing.Size(180, 60);
+            this.restartBtn.Size = new System.Drawing.Size(125, 60);
             this.restartBtn.TabIndex = 1;
-            this.restartBtn.Text = "Restart pc";
+            this.restartBtn.Text = "Restart";
             this.restartBtn.ThemeName = "FluentDark";
             this.toolTip1.SetToolTip(this.restartBtn, "Restart");
             this.restartBtn.Click += new System.EventHandler(this.restartBtn_Click);
+            // 
+            // logcancellBtn
+            // 
+            this.logcancellBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.logcancellBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.logcancellBtn.ForeColor = System.Drawing.Color.Black;
+            this.logcancellBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
+            this.logcancellBtn.Location = new System.Drawing.Point(279, 88);
+            this.logcancellBtn.Name = "logcancellBtn";
+            this.logcancellBtn.Size = new System.Drawing.Size(125, 60);
+            this.logcancellBtn.TabIndex = 3;
+            this.logcancellBtn.Text = "Cancell";
+            this.logcancellBtn.ThemeName = "FluentDark";
+            this.toolTip1.SetToolTip(this.logcancellBtn, "Logoff cancell");
+            this.logcancellBtn.Click += new System.EventHandler(this.logcancellBtn_Click);
             // 
             // singoutBtn
             // 
@@ -166,33 +217,18 @@
             this.singoutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.singoutBtn.ForeColor = System.Drawing.Color.Black;
             this.singoutBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_exit_96;
-            this.singoutBtn.Location = new System.Drawing.Point(27, 88);
+            this.singoutBtn.Location = new System.Drawing.Point(17, 88);
             this.singoutBtn.Name = "singoutBtn";
-            this.singoutBtn.Size = new System.Drawing.Size(180, 60);
+            this.singoutBtn.Size = new System.Drawing.Size(125, 60);
             this.singoutBtn.TabIndex = 2;
             this.singoutBtn.Text = "Sing out";
             this.singoutBtn.ThemeName = "FluentDark";
             this.toolTip1.SetToolTip(this.singoutBtn, "Sing out");
             this.singoutBtn.Click += new System.EventHandler(this.singoutBtn_Click);
             // 
-            // logcancellBtn
-            // 
-            this.logcancellBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.logcancellBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.logcancellBtn.ForeColor = System.Drawing.Color.Black;
-            this.logcancellBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_unavailable_96;
-            this.logcancellBtn.Location = new System.Drawing.Point(213, 88);
-            this.logcancellBtn.Name = "logcancellBtn";
-            this.logcancellBtn.Size = new System.Drawing.Size(180, 60);
-            this.logcancellBtn.TabIndex = 3;
-            this.logcancellBtn.Text = "    Logoff Cancell";
-            this.logcancellBtn.ThemeName = "FluentDark";
-            this.toolTip1.SetToolTip(this.logcancellBtn, "Logoff cancell");
-            this.logcancellBtn.Click += new System.EventHandler(this.logcancellBtn_Click);
-            // 
             // Panel3
             // 
-            this.Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Panel3.Controls.Add(this.WEB_TXT_INPUT);
             this.Panel3.Controls.Add(this.OpenWeb_Btn);
             this.Panel3.Controls.Add(this.HomePage_Btn);
@@ -309,8 +345,7 @@
             // 
             // Panel2
             // 
-            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.Controls.Add(this.cleanTmpBtn);
             this.Panel2.Controls.Add(this.printersList);
@@ -416,8 +451,7 @@
             // 
             // insProgBtn
             // 
-            this.insProgBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.insProgBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.insProgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.insProgBtn.ForeColor = System.Drawing.Color.Black;
             this.insProgBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_control_panel_program_961;
@@ -460,10 +494,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Panel1)).EndInit();
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sleep_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hibernate_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shutdownBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restartBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logcancellBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singoutBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel3)).EndInit();
             this.Panel3.ResumeLayout(false);
             this.Panel3.PerformLayout();
@@ -519,6 +555,8 @@
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
         private System.Windows.Forms.Label bChargeInfo;
         private Telerik.WinControls.UI.RadButton cleanTmpBtn;
+        private Telerik.WinControls.UI.RadButton sleep_btn;
+        private Telerik.WinControls.UI.RadButton hibernate_btn;
     }
 }
 
