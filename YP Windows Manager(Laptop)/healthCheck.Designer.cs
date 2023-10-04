@@ -77,15 +77,6 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.Visible = false;
             // 
-            // ugToolStripMenuItem
-            // 
-            this.ugToolStripMenuItem.Name = "ugToolStripMenuItem";
-            this.ugToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.ugToolStripMenuItem.Size = new System.Drawing.Size(33, 20);
-            this.ugToolStripMenuItem.Text = "ug";
-            this.ugToolStripMenuItem.Visible = false;
-            this.ugToolStripMenuItem.Click += new System.EventHandler(this.ugToolStripMenuItem_Click);
-            // 
             // cpuLabel
             // 
             this.cpuLabel.AutoSize = true;

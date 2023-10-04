@@ -4,22 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-<<<<<<< HEAD
 using static MetroFramework.Drawing.MetroPaint;
-=======
 using System.Management;
 using System.Threading.Tasks;
 using Telerik.WinControls.UI;
->>>>>>> New_Features
 
 namespace YP_Windows_Manager_Computer_
 {
     public partial class healthCheck : Telerik.WinControls.UI.RadForm
     {
-<<<<<<< HEAD
-=======
 
->>>>>>> New_Features
         public healthCheck()
         {
             InitializeComponent();
@@ -86,9 +80,9 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form4_Load(object sender, EventArgs e)
         {
-                MaximizeBox = false;
-                ControlBox = true;
-                MinimizeBox = true;
+            MaximizeBox = false;
+            ControlBox = true;
+            MinimizeBox = true;
         }
 
         private async void radButton1_Click(object sender, EventArgs e)
@@ -97,12 +91,12 @@ namespace YP_Windows_Manager_Computer_
             ControlBox = false;
             MinimizeBox = false;
             progressBar.Visible = true;
-            progressBar.Value= 0;
+            progressBar.Value = 0;
             progressBar.Style = ProgressBarStyle.Marquee;
-           
+
             progressBar.MarqueeAnimationSpeed = 30;
 
-            await Task.Delay(3000); 
+            await Task.Delay(3000);
 
             progressBar.Style = ProgressBarStyle.Continuous;
             progressBar.Value = 100;
@@ -114,18 +108,12 @@ namespace YP_Windows_Manager_Computer_
         }
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
-<<<<<<< HEAD
-        { 
-=======
         {
->>>>>>> New_Features
+
+            {
                 WM frm = new WM();
                 frm.Show();
-        }
-
-        private void ugToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }
