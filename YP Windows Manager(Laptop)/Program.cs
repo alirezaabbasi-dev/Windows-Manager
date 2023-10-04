@@ -21,7 +21,7 @@ namespace YP_Windows_Manager_Computer_
 
             bool runed;
 
-            System.Threading.Mutex mtx = new System.Threading.Mutex(true, "yp-wm-ver:3.0.0", out runed);
+            System.Threading.Mutex mtx = new System.Threading.Mutex(true, "yp-wm", out runed);
 
             if (!runed)
             {
