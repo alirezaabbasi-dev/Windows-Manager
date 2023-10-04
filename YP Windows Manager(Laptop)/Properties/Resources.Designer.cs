@@ -183,9 +183,39 @@ namespace YP_Windows_Manager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_hibernate_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hibernate-961", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home_96__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-home-96 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_moon_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-moon-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_moon_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-moon-961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

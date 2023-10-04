@@ -32,6 +32,7 @@
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
+            this.bootStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -63,11 +64,20 @@
             this.radButton1.ThemeName = "FluentDark";
             this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
+            // bootStatus
+            // 
+            this.bootStatus.AutoSize = true;
+            this.bootStatus.Location = new System.Drawing.Point(9, 144);
+            this.bootStatus.Name = "bootStatus";
+            this.bootStatus.Size = new System.Drawing.Size(0, 17);
+            this.bootStatus.TabIndex = 2;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 241);
+            this.ClientSize = new System.Drawing.Size(531, 223);
+            this.Controls.Add(this.bootStatus);
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.radButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -75,10 +85,6 @@
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.Opacity = 0.99D;
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YP Windows Manager Settings";
             this.ThemeName = "Fluent";
@@ -88,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,5 +103,6 @@
         private Telerik.WinControls.UI.RadButton radButton1;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
+        private System.Windows.Forms.Label bootStatus;
     }
 }

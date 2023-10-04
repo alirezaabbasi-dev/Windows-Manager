@@ -32,13 +32,13 @@
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.radWaitingBar1 = new Telerik.WinControls.UI.RadWaitingBar();
+            this.fadingRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.yp01ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fadingRingWaitingBarIndicatorElement1 = new Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radWaitingBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
@@ -83,6 +83,10 @@
             ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).Dash = false;
             ((Telerik.WinControls.UI.WaitingBarSeparatorElement)(this.radWaitingBar1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.Black;
             // 
+            // fadingRingWaitingBarIndicatorElement1
+            // 
+            this.fadingRingWaitingBarIndicatorElement1.Name = "fadingRingWaitingBarIndicatorElement1";
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -109,7 +113,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menuStrip1
             // 
@@ -129,10 +132,6 @@
             this.yp01ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.yp01ToolStripMenuItem.Text = "yp01";
             // 
-            // fadingRingWaitingBarIndicatorElement1
-            // 
-            this.fadingRingWaitingBarIndicatorElement1.Name = "fadingRingWaitingBarIndicatorElement1";
-            // 
             // waitFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,10 +143,6 @@
             this.Controls.Add(this.radLabel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "waitFrm";
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "waitfrm";
             this.ThemeName = "Fluent";
