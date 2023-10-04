@@ -29,42 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(installedAppFrm));
-            this.listBox1 = new Telerik.WinControls.UI.RadListView();
-            ((System.ComponentModel.ISupportInitialize)(this.listBox1)).BeginInit();
+            this.InstalledList = new Telerik.WinControls.UI.RadListView();
+            this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            ((System.ComponentModel.ISupportInitialize)(this.InstalledList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // InstalledList
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.GroupItemSize = new System.Drawing.Size(200, 28);
-            this.listBox1.ItemSize = new System.Drawing.Size(200, 28);
-            this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(741, 438);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.ThemeName = "Fluent";
-            this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListBox1_MouseDoubleClick);
+            this.InstalledList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InstalledList.GroupItemSize = new System.Drawing.Size(200, 28);
+            this.InstalledList.ItemSize = new System.Drawing.Size(200, 28);
+            this.InstalledList.Location = new System.Drawing.Point(0, 0);
+            this.InstalledList.Name = "InstalledList";
+            this.InstalledList.Size = new System.Drawing.Size(741, 438);
+            this.InstalledList.TabIndex = 0;
+            this.InstalledList.ThemeName = "Fluent";
+            this.InstalledList.SelectedItemChanged += new System.EventHandler(this.InstalledList_SelectedItemChanged);
+            this.InstalledList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListBox1_MouseDoubleClick);
             // 
             // installedAppFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 438);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.InstalledList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "installedAppFrm";
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Installed Application";
-            this.ThemeName = "FluentDark";
+            this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form6_FormClosing);
             this.Load += new System.EventHandler(this.Form6_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.listBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InstalledList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -72,6 +71,8 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadListView listBox1;
+        private Telerik.WinControls.UI.RadListView InstalledList;
+        private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
     }
 }

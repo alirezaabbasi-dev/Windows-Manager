@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(healthCheck));
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.checkBtn = new Telerik.WinControls.UI.RadButton();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,22 +40,22 @@
             this.ramLabel = new System.Windows.Forms.Label();
             this.storageLabel = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkBtn)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radButton1
+            // checkBtn
             // 
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Location = new System.Drawing.Point(190, 80);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(153, 56);
-            this.radButton1.TabIndex = 1;
-            this.radButton1.Text = "Check";
-            this.radButton1.ThemeName = "FluentDark";
-            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
+            this.checkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.checkBtn.ForeColor = System.Drawing.Color.Black;
+            this.checkBtn.Location = new System.Drawing.Point(190, 80);
+            this.checkBtn.Name = "checkBtn";
+            this.checkBtn.Size = new System.Drawing.Size(153, 56);
+            this.checkBtn.TabIndex = 1;
+            this.checkBtn.Text = "Check";
+            this.checkBtn.ThemeName = "FluentDark";
+            this.checkBtn.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // label1
             // 
@@ -76,6 +76,11 @@
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.Visible = false;
+            // 
+            // ugToolStripMenuItem
+            // 
+            this.ugToolStripMenuItem.Name = "ugToolStripMenuItem";
+            this.ugToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
             // 
             // cpuLabel
             // 
@@ -131,7 +136,7 @@
             this.Controls.Add(this.gpuLabel);
             this.Controls.Add(this.cpuLabel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radButton1);
+            this.Controls.Add(this.checkBtn);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -142,7 +147,7 @@
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkBtn)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -152,7 +157,7 @@
         }
 
         #endregion
-        private Telerik.WinControls.UI.RadButton radButton1;
+        private Telerik.WinControls.UI.RadButton checkBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ugToolStripMenuItem;

@@ -8,6 +8,7 @@ using static MetroFramework.Drawing.MetroPaint;
 using System.Management;
 using System.Threading.Tasks;
 using Telerik.WinControls.UI;
+using Microsoft.Win32;
 
 namespace YP_Windows_Manager_Computer_
 {
@@ -80,6 +81,61 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            Color colour = ColorTranslator.FromHtml("43, 43, 43");
+            Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
+
+            // Read the registry key to determine the current theme
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        ThemeName = fluentDarkTheme1.ThemeName;
+                        checkBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        checkBtn.BackColor = colour;
+                        checkBtn.ForeColor = L_mode_colour;
+                        progressBar.BackColor = colour;
+
+                        this.BackColor = Color.Black;
+                        cpuLabel.BackColor = colour;
+                        gpuLabel.BackColor = colour;
+                        ramLabel.BackColor = colour;
+                        storageLabel.BackColor = colour;
+
+                        this.ForeColor = L_mode_colour;
+                        gpuLabel.ForeColor = L_mode_colour;
+                        ramLabel.ForeColor = L_mode_colour;
+                        storageLabel.ForeColor = L_mode_colour;
+                        cpuLabel.ForeColor = L_mode_colour;
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                        this.ThemeName = fluentTheme1.ThemeName;
+                        checkBtn.ThemeName = fluentTheme1.ThemeName;
+                        checkBtn.BackColor = L_mode_colour;
+                        checkBtn.ForeColor = colour;
+                        progressBar.BackColor = L_mode_colour;
+
+                        this.BackColor = Color.White;
+                        cpuLabel.BackColor = L_mode_colour;
+                        gpuLabel.BackColor = L_mode_colour;
+                        ramLabel.BackColor = L_mode_colour;
+                        storageLabel.BackColor = L_mode_colour;
+
+                        this.ForeColor = colour;
+                        gpuLabel.ForeColor = colour;
+                        ramLabel.ForeColor = colour;
+                        storageLabel.ForeColor = colour;
+                        cpuLabel.ForeColor = colour;
+                    }
+                }
+            }
             MaximizeBox = false;
             ControlBox = true;
             MinimizeBox = true;
@@ -87,7 +143,7 @@ namespace YP_Windows_Manager_Computer_
 
         private async void radButton1_Click(object sender, EventArgs e)
         {
-            radButton1.Enabled = false;
+            checkBtn.Enabled = false;
             ControlBox = false;
             MinimizeBox = false;
             progressBar.Visible = true;
@@ -104,7 +160,7 @@ namespace YP_Windows_Manager_Computer_
             CheckHardwareHealth();
             ControlBox = true;
             MinimizeBox = true;
-            radButton1.Enabled = true;
+            checkBtn.Enabled = true;
         }
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)

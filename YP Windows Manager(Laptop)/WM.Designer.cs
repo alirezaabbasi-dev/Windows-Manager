@@ -97,7 +97,7 @@
             // 
             this.WEB_TXT_INPUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.WEB_TXT_INPUT.ForeColor = System.Drawing.Color.Black;
-            this.WEB_TXT_INPUT.Location = new System.Drawing.Point(22, 24);
+            this.WEB_TXT_INPUT.Location = new System.Drawing.Point(25, 27);
             this.WEB_TXT_INPUT.Name = "WEB_TXT_INPUT";
             this.WEB_TXT_INPUT.Size = new System.Drawing.Size(370, 24);
             this.WEB_TXT_INPUT.TabIndex = 0;
@@ -244,7 +244,7 @@
             this.OpenWeb_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.OpenWeb_Btn.ForeColor = System.Drawing.Color.Black;
             this.OpenWeb_Btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_website_96__1_;
-            this.OpenWeb_Btn.Location = new System.Drawing.Point(210, 54);
+            this.OpenWeb_Btn.Location = new System.Drawing.Point(213, 57);
             this.OpenWeb_Btn.Name = "OpenWeb_Btn";
             this.OpenWeb_Btn.Size = new System.Drawing.Size(182, 42);
             this.OpenWeb_Btn.TabIndex = 2;
@@ -260,7 +260,7 @@
             this.HomePage_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.HomePage_Btn.ForeColor = System.Drawing.Color.Black;
             this.HomePage_Btn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_home_96__1_;
-            this.HomePage_Btn.Location = new System.Drawing.Point(22, 54);
+            this.HomePage_Btn.Location = new System.Drawing.Point(25, 57);
             this.HomePage_Btn.Name = "HomePage_Btn";
             this.HomePage_Btn.Size = new System.Drawing.Size(182, 42);
             this.HomePage_Btn.TabIndex = 1;
@@ -288,7 +288,7 @@
             this.refreshBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.refreshBtn.ForeColor = System.Drawing.Color.Black;
             this.refreshBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
-            this.refreshBtn.Location = new System.Drawing.Point(22, 12);
+            this.refreshBtn.Location = new System.Drawing.Point(25, 14);
             this.refreshBtn.Name = "refreshBtn";
             this.refreshBtn.Size = new System.Drawing.Size(182, 52);
             this.refreshBtn.TabIndex = 0;
@@ -303,7 +303,7 @@
             this.checkHealthBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.checkHealthBtn.ForeColor = System.Drawing.Color.Black;
             this.checkHealthBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_system_information_96__1_;
-            this.checkHealthBtn.Location = new System.Drawing.Point(22, 70);
+            this.checkHealthBtn.Location = new System.Drawing.Point(25, 72);
             this.checkHealthBtn.Name = "checkHealthBtn";
             this.checkHealthBtn.Size = new System.Drawing.Size(182, 52);
             this.checkHealthBtn.TabIndex = 2;
@@ -319,7 +319,7 @@
             this.aboutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.aboutBtn.ForeColor = System.Drawing.Color.Black;
             this.aboutBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_about_96__2_;
-            this.aboutBtn.Location = new System.Drawing.Point(210, 70);
+            this.aboutBtn.Location = new System.Drawing.Point(213, 72);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(182, 52);
             this.aboutBtn.TabIndex = 3;
@@ -334,7 +334,7 @@
             this.sysInfoBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.sysInfoBtn.ForeColor = System.Drawing.Color.Black;
             this.sysInfoBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_processor_96__1_;
-            this.sysInfoBtn.Location = new System.Drawing.Point(210, 12);
+            this.sysInfoBtn.Location = new System.Drawing.Point(213, 14);
             this.sysInfoBtn.Name = "sysInfoBtn";
             this.sysInfoBtn.Size = new System.Drawing.Size(182, 52);
             this.sysInfoBtn.TabIndex = 1;
@@ -471,8 +471,8 @@
             // 
             // WM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(825, 478);
             this.Controls.Add(this.insProgBtn);
             this.Controls.Add(this.Panel2);

@@ -10,12 +10,12 @@ using System.Drawing.Printing;
 using System.Net.NetworkInformation;
 using MetroFramework;
 using Telerik.WinControls;
+using System.IO;
 
 namespace YP_Windows_Manager_Computer_
 {
     public partial class WM : Telerik.WinControls.UI.RadForm
     {
-        //startup
         enum RecycleFlags : uint
         {
             SHERB_NOCONFIRMATION = 0x00000001,
@@ -25,13 +25,23 @@ namespace YP_Windows_Manager_Computer_
         public WM()
         {
             InitializeComponent();
+            this.Load += Form1_Load;
+        }
+        private bool CheckForDVDDrive()
+        {
+            DriveInfo[] drives = DriveInfo.GetDrives();
 
-            // Subscribe to the Microsoft.Win32.SystemEvents.DisplaySettingsChanged event to detect theme changes
-            //  SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
+            foreach (DriveInfo drive in drives)
+            {
+                if (drive.DriveType == DriveType.CDRom)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
             Color colour = ColorTranslator.FromHtml("#212121");
             Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
             Color L_mode_colour1 = ColorTranslator.FromHtml("204, 204, 204");
@@ -50,7 +60,7 @@ namespace YP_Windows_Manager_Computer_
                         // Apply dark mode styles
                         this.ThemeName = fluentDarkTheme2.ThemeName;
                         shutdownBtn.ThemeName = fluentDarkTheme2.ThemeName;
-                        this.ThemeName = fluentDarkTheme1.ThemeName;                       
+                        this.ThemeName = fluentDarkTheme1.ThemeName;
                         Panel1.BackColor = colour;
                         Panel3.BackColor = colour;
                         Panel4.BackColor = colour;
@@ -81,40 +91,40 @@ namespace YP_Windows_Manager_Computer_
                         sysInfoBtn.BackColor = colour;
                         checkHealthBtn.BackColor = colour;
                         aboutBtn.BackColor = colour;
-                        hibernate_btn.BackColor= colour;
+                        hibernate_btn.BackColor = colour;
                         sleep_btn.BackColor = colour;
                         //all btn forecolor
-                        shutdownBtn.ForeColor= L_mode_colour;
-                        restartBtn.ForeColor =  L_mode_colour;
-                        singoutBtn.ForeColor= L_mode_colour;
-                        logcancellBtn.ForeColor= L_mode_colour;
-                        openDVDBtn.ForeColor= L_mode_colour;
-                        disconnect_dial_Btn.ForeColor= L_mode_colour;
-                        emptyRecycleBtn.ForeColor= L_mode_colour;
-                        insProgBtn.ForeColor= L_mode_colour;
-                        appStnBtn.ForeColor= L_mode_colour;
-                        cleanTmpBtn.ForeColor= L_mode_colour;
-                        WEB_TXT_INPUT.ForeColor= L_mode_colour;
-                        HomePage_Btn.ForeColor= L_mode_colour;
-                        OpenWeb_Btn.ForeColor= L_mode_colour;
-                        refreshBtn.ForeColor= L_mode_colour;
-                        sysInfoBtn.ForeColor= L_mode_colour;
-                        checkHealthBtn.ForeColor= L_mode_colour;
-                        aboutBtn.ForeColor= L_mode_colour;
-                        hibernate_btn.ForeColor= L_mode_colour;
-                        sleep_btn.ForeColor= L_mode_colour;
+                        shutdownBtn.ForeColor = L_mode_colour;
+                        restartBtn.ForeColor = L_mode_colour;
+                        singoutBtn.ForeColor = L_mode_colour;
+                        logcancellBtn.ForeColor = L_mode_colour;
+                        openDVDBtn.ForeColor = L_mode_colour;
+                        disconnect_dial_Btn.ForeColor = L_mode_colour;
+                        emptyRecycleBtn.ForeColor = L_mode_colour;
+                        insProgBtn.ForeColor = L_mode_colour;
+                        appStnBtn.ForeColor = L_mode_colour;
+                        cleanTmpBtn.ForeColor = L_mode_colour;
+                        WEB_TXT_INPUT.ForeColor = L_mode_colour;
+                        HomePage_Btn.ForeColor = L_mode_colour;
+                        OpenWeb_Btn.ForeColor = L_mode_colour;
+                        refreshBtn.ForeColor = L_mode_colour;
+                        sysInfoBtn.ForeColor = L_mode_colour;
+                        checkHealthBtn.ForeColor = L_mode_colour;
+                        aboutBtn.ForeColor = L_mode_colour;
+                        hibernate_btn.ForeColor = L_mode_colour;
+                        sleep_btn.ForeColor = L_mode_colour;
                     }
                     else
                     {
                         // Apply light mode styles
-                        this.ThemeName =fluentTheme1.ThemeName;
-                        Panel1.ThemeName =fluentTheme1.ThemeName;
-                        Panel3.ThemeName =fluentTheme1.ThemeName;
-                        Panel4.ThemeName =fluentTheme1.ThemeName;
-                        Panel2.ThemeName =fluentTheme1.ThemeName;
+                        this.ThemeName = fluentTheme1.ThemeName;
+                        Panel1.ThemeName = fluentTheme1.ThemeName;
+                        Panel3.ThemeName = fluentTheme1.ThemeName;
+                        Panel4.ThemeName = fluentTheme1.ThemeName;
+                        Panel2.ThemeName = fluentTheme1.ThemeName;
                         printersList.ThemeName = fluentTheme1.ThemeName;
                         bChargeInfo.ForeColor = colour;
-                        bChargeInfo.BackColor= L_mode_colour1;
+                        bChargeInfo.BackColor = L_mode_colour1;
                         //panels backcolor
                         Panel1.BackColor = L_mode_colour1;
                         Panel2.BackColor = L_mode_colour1;
@@ -167,7 +177,11 @@ namespace YP_Windows_Manager_Computer_
                 PowerStatus powerStatus = SystemInformation.PowerStatus;
                 int batteryLevel = (int)(powerStatus.BatteryLifePercent * 100);
                 bChargeInfo.Text = $"Battery Level: {batteryLevel}%";
+
+                bool dvdDriveExists = CheckForDVDDrive();
+                openDVDBtn.Enabled = dvdDriveExists;
             }
+
         }
 
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
@@ -176,18 +190,18 @@ namespace YP_Windows_Manager_Computer_
 
         private void shutdownBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/s /t 60");
+            System.Diagnostics.Process.Start("ShutDown", "/s /t 10");
         }
 
         private void singoutBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/l /t 60");
+            System.Diagnostics.Process.Start("ShutDown", "/l /t 10");
             HelpButton.ToString();
         }
 
         private void restartBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/r /t 60");
+            System.Diagnostics.Process.Start("ShutDown", "/r /t 10");
         }
 
         private void logcancellBtn_Click(object sender, EventArgs e)
@@ -359,21 +373,12 @@ namespace YP_Windows_Manager_Computer_
 
         private void cleanTmpBtn_Click(object sender, EventArgs e)
         {
-            /*string userName = Environment.UserName;
-                var dir = new DirectoryInfo("C:\\Users\\" + userName + "\\AppData\\Local\\Temp");
-                var d = new DirectoryInfo("C:\\Windows\\Temp");
-
-            foreach (var file in Directory.GetFiles(d.))
-                {
-                    File.Delete(file);
-                }
-            */
             System.Diagnostics.Process.Start("cleanmgr");
         }
 
         private void hibernate_btn_Click(object sender, EventArgs e)
         {
-            RadMessageBox.ThemeName=this.ThemeName;
+            RadMessageBox.ThemeName = this.ThemeName;
             DialogResult result = Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in Hibernate mode?", "Hibernate", MessageBoxButtons.YesNo, RadMessageIcon.Question);
 
             if (result == DialogResult.Yes)
@@ -385,7 +390,7 @@ namespace YP_Windows_Manager_Computer_
         private void sleep_btn_Click(object sender, EventArgs e)
         {
             RadMessageBox.ThemeName = this.ThemeName;
-            DialogResult result =Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in Sleep mode?", "Sleep", MessageBoxButtons.YesNo, RadMessageIcon.Question);
+            DialogResult result = Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in Sleep mode?", "Sleep", MessageBoxButtons.YesNo, RadMessageIcon.Question);
 
             if (result == DialogResult.Yes)
             {

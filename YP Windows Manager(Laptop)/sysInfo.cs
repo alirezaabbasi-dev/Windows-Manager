@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management;
+using Microsoft.Win32;
 
 
 
@@ -22,6 +23,42 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            Color colour = ColorTranslator.FromHtml("43, 43, 43");
+            Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
+
+            // Read the registry key to determine the current theme
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        ThemeName = fluentDarkTheme1.ThemeName;
+                        this.BackColor = colour;
+                        this.ForeColor = L_mode_colour;
+                        sysInfoList.ThemeName = fluentDarkTheme1.ThemeName;
+                        sysdate__Info.BackColor = colour;
+                        sysdate__Info.ForeColor = L_mode_colour;
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                        this.ThemeName = fluentTheme1.ThemeName;
+                        this.BackColor = L_mode_colour;
+                        this.ForeColor = colour;
+                        sysInfoList.ThemeName = fluentTheme1.ThemeName;
+                        sysdate__Info.BackColor = L_mode_colour;
+                        sysdate__Info.ForeColor = colour;
+                    }
+                }
+            }
+
+
+
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_BaseBoard");
             ManagementObjectCollection collection = searcher.Get();
             string architecture = Environment.Is64BitOperatingSystem ? "64-bit" : "32-bit";
@@ -73,7 +110,7 @@ namespace YP_Windows_Manager_Computer_
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = "System time: " + DateTime.Now.ToString();
+            sysdate__Info.Text = "System time: " + DateTime.Now.ToString();
         }
         private string GetSystemRAMInfo()
         {

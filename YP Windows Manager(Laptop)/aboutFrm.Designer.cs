@@ -29,36 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(aboutFrm));
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.okBtn = new Telerik.WinControls.UI.RadButton();
+            this.github__Btn = new Telerik.WinControls.UI.RadButton();
             this.aboutTxt = new System.Windows.Forms.RichTextBox();
-            this.radButton3 = new Telerik.WinControls.UI.RadButton();
+            this.txtColor__Btn = new Telerik.WinControls.UI.RadButton();
             this.radColorDialog1 = new Telerik.WinControls.RadColorDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
+            this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            ((System.ComponentModel.ISupportInitialize)(this.okBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.github__Btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtColor__Btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radButton1
+            // okBtn
             // 
-            this.radButton1.Location = new System.Drawing.Point(258, 376);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(110, 51);
-            this.radButton1.TabIndex = 2;
-            this.radButton1.Text = "OK";
-            this.radButton1.ThemeName = "Fluent";
-            this.radButton1.Click += new System.EventHandler(this.RadButton1_Click);
+            this.okBtn.Location = new System.Drawing.Point(258, 376);
+            this.okBtn.Name = "okBtn";
+            this.okBtn.Size = new System.Drawing.Size(110, 51);
+            this.okBtn.TabIndex = 2;
+            this.okBtn.Text = "OK";
+            this.okBtn.ThemeName = "Fluent";
+            this.okBtn.Click += new System.EventHandler(this.RadButton1_Click);
             // 
-            // radButton2
+            // github__Btn
             // 
-            this.radButton2.Location = new System.Drawing.Point(12, 376);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(130, 51);
-            this.radButton2.TabIndex = 1;
-            this.radButton2.Text = "My Github";
-            this.radButton2.ThemeName = "Fluent";
-            this.radButton2.Click += new System.EventHandler(this.RadButton2_Click);
+            this.github__Btn.Location = new System.Drawing.Point(12, 376);
+            this.github__Btn.Name = "github__Btn";
+            this.github__Btn.Size = new System.Drawing.Size(130, 51);
+            this.github__Btn.TabIndex = 1;
+            this.github__Btn.Text = "My Github";
+            this.github__Btn.ThemeName = "Fluent";
+            this.github__Btn.Click += new System.EventHandler(this.RadButton2_Click);
             // 
             // aboutTxt
             // 
@@ -74,17 +76,17 @@
             this.aboutTxt.Text = "Application Name: YP Windows Manager\n\nApplication Version: 3.0.0 (Beta)\n\nCompany " +
     "Name: YP(You Pc)\n\nDeveloper: Alireza Abbasi\n\nApplication Icons: icons8";
             // 
-            // radButton3
+            // txtColor__Btn
             // 
-            this.radButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.radButton3.ForeColor = System.Drawing.Color.Black;
-            this.radButton3.Location = new System.Drawing.Point(304, 6);
-            this.radButton3.Name = "radButton3";
-            this.radButton3.Size = new System.Drawing.Size(64, 19);
-            this.radButton3.TabIndex = 4;
-            this.radButton3.Text = "Text color";
-            this.radButton3.ThemeName = "Fluent";
-            this.radButton3.Click += new System.EventHandler(this.RadButton3_Click);
+            this.txtColor__Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtColor__Btn.ForeColor = System.Drawing.Color.Black;
+            this.txtColor__Btn.Location = new System.Drawing.Point(304, 6);
+            this.txtColor__Btn.Name = "txtColor__Btn";
+            this.txtColor__Btn.Size = new System.Drawing.Size(64, 19);
+            this.txtColor__Btn.TabIndex = 4;
+            this.txtColor__Btn.Text = "Text color";
+            this.txtColor__Btn.ThemeName = "Fluent";
+            this.txtColor__Btn.Click += new System.EventHandler(this.RadButton3_Click);
             // 
             // radColorDialog1
             // 
@@ -99,10 +101,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 439);
-            this.Controls.Add(this.radButton3);
+            this.Controls.Add(this.txtColor__Btn);
             this.Controls.Add(this.aboutTxt);
-            this.Controls.Add(this.radButton2);
-            this.Controls.Add(this.radButton1);
+            this.Controls.Add(this.github__Btn);
+            this.Controls.Add(this.okBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "aboutFrm";
@@ -111,9 +113,9 @@
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form5_FormClosing);
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.okBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.github__Btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtColor__Btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -121,10 +123,12 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadButton radButton1;
-        private Telerik.WinControls.UI.RadButton radButton2;
+        private Telerik.WinControls.UI.RadButton okBtn;
+        private Telerik.WinControls.UI.RadButton github__Btn;
         private System.Windows.Forms.RichTextBox aboutTxt;
-        private Telerik.WinControls.UI.RadButton radButton3;
+        private Telerik.WinControls.UI.RadButton txtColor__Btn;
         private Telerik.WinControls.RadColorDialog radColorDialog1;
+        private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
     }
 }

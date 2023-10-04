@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls.Themes;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace YP_Windows_Manager_Computer_
@@ -18,7 +19,7 @@ namespace YP_Windows_Manager_Computer_
         Microsoft.Win32.RegistryKey remreg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 
         public Form3()
-        { 
+        {
             InitializeComponent();
             if (addreg.GetValue("yp-wm") != null)
             {
@@ -34,7 +35,37 @@ namespace YP_Windows_Manager_Computer_
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            Color colour = ColorTranslator.FromHtml("43, 43, 43");
+            Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
 
+            // Read the registry key to determine the current theme
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        ThemeName = fluentDarkTheme1.ThemeName;
+                        activeBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        deactiveBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        this.BackColor = colour;
+                        this.ForeColor = L_mode_colour;
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                        this.ThemeName = fluentTheme1.ThemeName;
+                        activeBtn.ThemeName = fluentTheme1.ThemeName;
+                        deactiveBtn.ThemeName = fluentTheme1.ThemeName;
+                        this.BackColor = L_mode_colour;
+                        this.ForeColor = colour;
+                    }
+                }
+            }
         }
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)

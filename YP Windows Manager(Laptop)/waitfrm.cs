@@ -39,7 +39,7 @@ namespace YP_Windows_Manager_Computer_
                         ThemeName = fluentDarkTheme1.ThemeName;
                         this.BackColor = colour;
                         this.ForeColor = L_mode_colour;
-                        radWaitingBar1.BackColor= colour;
+                        radWaitingBar1.BackColor = colour;
                     }
                     else
                     {
@@ -66,7 +66,7 @@ namespace YP_Windows_Manager_Computer_
         {
             WM nr = new WM();
             this.Hide();
-           
+
             nr.Show();
             timer1.Stop();
 

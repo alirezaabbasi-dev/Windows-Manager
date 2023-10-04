@@ -33,6 +33,7 @@
             this.bootStatus = new System.Windows.Forms.Label();
             this.activeBtn = new Telerik.WinControls.UI.RadRadioButton();
             this.deactiveBtn = new Telerik.WinControls.UI.RadRadioButton();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             ((System.ComponentModel.ISupportInitialize)(this.activeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deactiveBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -107,5 +108,6 @@
         private System.Windows.Forms.Label bootStatus;
         private Telerik.WinControls.UI.RadRadioButton activeBtn;
         private Telerik.WinControls.UI.RadRadioButton deactiveBtn;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
     }
 }

@@ -30,27 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sysInfo));
-            this.label1 = new System.Windows.Forms.Label();
+            this.sysdate__Info = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.sysInfoList = new Telerik.WinControls.UI.RadListView();
-            this.telerikMetroTouchTheme1 = new Telerik.WinControls.Themes.TelerikMetroTouchTheme();
             this.gpuAbout = new System.Windows.Forms.Label();
+            this.telerikMetroTouchTheme1 = new Telerik.WinControls.Themes.TelerikMetroTouchTheme();
+            this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
+            this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoList)).BeginInit();
             this.sysInfoList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // sysdate__Info
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(15, 428);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.sysdate__Info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.sysdate__Info.AutoSize = true;
+            this.sysdate__Info.BackColor = System.Drawing.Color.White;
+            this.sysdate__Info.ForeColor = System.Drawing.Color.Black;
+            this.sysdate__Info.Location = new System.Drawing.Point(15, 428);
+            this.sysdate__Info.Name = "sysdate__Info";
+            this.sysdate__Info.Size = new System.Drawing.Size(0, 17);
+            this.sysdate__Info.TabIndex = 1;
             // 
             // timer1
             // 
@@ -73,7 +74,7 @@
             this.gpuAbout.BackColor = System.Drawing.Color.Transparent;
             this.gpuAbout.Location = new System.Drawing.Point(484, 12);
             this.gpuAbout.Name = "gpuAbout";
-            this.gpuAbout.Size = new System.Drawing.Size(0, 13);
+            this.gpuAbout.Size = new System.Drawing.Size(0, 17);
             this.gpuAbout.TabIndex = 0;
             // 
             // sysInfo
@@ -81,7 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 454);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.sysdate__Info);
             this.Controls.Add(this.sysInfoList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -102,10 +103,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label sysdate__Info;
         private System.Windows.Forms.Timer timer1;
         private Telerik.WinControls.UI.RadListView sysInfoList;
         private Telerik.WinControls.Themes.TelerikMetroTouchTheme telerikMetroTouchTheme1;
         private System.Windows.Forms.Label gpuAbout;
+        private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
+        private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
     }
 }
