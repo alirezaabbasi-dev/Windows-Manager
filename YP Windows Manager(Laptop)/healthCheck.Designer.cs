@@ -28,46 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(healthCheck));
-            this.radProgressBar1 = new Telerik.WinControls.UI.RadProgressBar();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.fluentDarkTheme1 = new Telerik.WinControls.Themes.FluentDarkTheme();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
-            this.timer6 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.radProgressBar1)).BeginInit();
+            this.cpuLabel = new System.Windows.Forms.Label();
+            this.gpuLabel = new System.Windows.Forms.Label();
+            this.ramLabel = new System.Windows.Forms.Label();
+            this.storageLabel = new System.Windows.Forms.Label();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radProgressBar1
-            // 
-            this.radProgressBar1.ForeColor = System.Drawing.Color.Black;
-            this.radProgressBar1.Location = new System.Drawing.Point(12, 12);
-            this.radProgressBar1.Name = "radProgressBar1";
-            // 
-            // 
-            // 
-            this.radProgressBar1.RootElement.AccessibleDescription = "Checking... .";
-            this.radProgressBar1.RootElement.AccessibleName = "Checking... .";
-            this.radProgressBar1.Size = new System.Drawing.Size(515, 51);
-            this.radProgressBar1.TabIndex = 0;
-            this.radProgressBar1.ThemeName = "Fluent";
-            // 
             // radButton1
             // 
             this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Location = new System.Drawing.Point(194, 80);
+            this.radButton1.Location = new System.Drawing.Point(190, 80);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(153, 56);
             this.radButton1.TabIndex = 1;
@@ -83,27 +65,6 @@
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 2;
             this.label1.Visible = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 5000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 3000;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // timer3
-            // 
-            this.timer3.Enabled = true;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // timer4
-            // 
-            this.timer4.Enabled = true;
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
             // menuStrip1
             // 
@@ -125,39 +86,71 @@
             this.ugToolStripMenuItem.Visible = false;
             this.ugToolStripMenuItem.Click += new System.EventHandler(this.ugToolStripMenuItem_Click);
             // 
-            // timer5
+            // cpuLabel
             // 
-            this.timer5.Enabled = true;
-            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            this.cpuLabel.AutoSize = true;
+            this.cpuLabel.Location = new System.Drawing.Point(18, 90);
+            this.cpuLabel.Name = "cpuLabel";
+            this.cpuLabel.Size = new System.Drawing.Size(116, 17);
+            this.cpuLabel.TabIndex = 4;
+            this.cpuLabel.Text = "CPU : Not checked";
             // 
-            // timer6
+            // gpuLabel
             // 
-            this.timer6.Enabled = true;
-            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
+            this.gpuLabel.AutoSize = true;
+            this.gpuLabel.Location = new System.Drawing.Point(18, 107);
+            this.gpuLabel.Name = "gpuLabel";
+            this.gpuLabel.Size = new System.Drawing.Size(117, 17);
+            this.gpuLabel.TabIndex = 4;
+            this.gpuLabel.Text = "GPU : Not checked";
+            // 
+            // ramLabel
+            // 
+            this.ramLabel.AutoSize = true;
+            this.ramLabel.Location = new System.Drawing.Point(18, 124);
+            this.ramLabel.Name = "ramLabel";
+            this.ramLabel.Size = new System.Drawing.Size(120, 17);
+            this.ramLabel.TabIndex = 4;
+            this.ramLabel.Text = "RAM : Not checked";
+            // 
+            // storageLabel
+            // 
+            this.storageLabel.AutoSize = true;
+            this.storageLabel.Location = new System.Drawing.Point(18, 141);
+            this.storageLabel.Name = "storageLabel";
+            this.storageLabel.Size = new System.Drawing.Size(138, 17);
+            this.storageLabel.TabIndex = 4;
+            this.storageLabel.Text = "Storage : Not checked";
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(12, 12);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(524, 47);
+            this.progressBar.TabIndex = 5;
             // 
             // healthCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 202);
+            this.ClientSize = new System.Drawing.Size(548, 178);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.ramLabel);
+            this.Controls.Add(this.storageLabel);
+            this.Controls.Add(this.gpuLabel);
+            this.Controls.Add(this.cpuLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radButton1);
-            this.Controls.Add(this.radProgressBar1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "healthCheck";
             this.Opacity = 0.95D;
-            // 
-            // 
-            // 
-            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PC Health Checker";
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radProgressBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -168,19 +161,16 @@
         }
 
         #endregion
-
-        private Telerik.WinControls.UI.RadProgressBar radProgressBar1;
         private Telerik.WinControls.UI.RadButton radButton1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Timer timer3;
-        private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ugToolStripMenuItem;
-        private System.Windows.Forms.Timer timer5;
         private Telerik.WinControls.Themes.FluentDarkTheme fluentDarkTheme1;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
-        private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Label cpuLabel;
+        private System.Windows.Forms.Label gpuLabel;
+        private System.Windows.Forms.Label ramLabel;
+        private System.Windows.Forms.Label storageLabel;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }

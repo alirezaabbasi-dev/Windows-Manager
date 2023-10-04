@@ -29,40 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.bootStatus = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            this.activeBtn = new Telerik.WinControls.UI.RadRadioButton();
+            this.deactiveBtn = new Telerik.WinControls.UI.RadRadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.activeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deactiveBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
-            // 
-            // radButton2
-            // 
-            this.radButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton2.ForeColor = System.Drawing.Color.Black;
-            this.radButton2.Image = global::YP_Windows_Manager.Properties.Resources.icons8_pause_96;
-            this.radButton2.Location = new System.Drawing.Point(269, 12);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(251, 101);
-            this.radButton2.TabIndex = 1;
-            this.radButton2.Text = "The program does not start after login";
-            this.radButton2.ThemeName = "FluentDark";
-            this.radButton2.Click += new System.EventHandler(this.radButton2_Click);
-            // 
-            // radButton1
-            // 
-            this.radButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.radButton1.ForeColor = System.Drawing.Color.Black;
-            this.radButton1.Image = global::YP_Windows_Manager.Properties.Resources.icons8_play_96;
-            this.radButton1.Location = new System.Drawing.Point(12, 12);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(251, 101);
-            this.radButton1.TabIndex = 0;
-            this.radButton1.Text = "Start the program after logging in";
-            this.radButton1.ThemeName = "FluentDark";
-            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // bootStatus
             // 
@@ -72,14 +46,44 @@
             this.bootStatus.Size = new System.Drawing.Size(0, 17);
             this.bootStatus.TabIndex = 2;
             // 
+            // activeBtn
+            // 
+            this.activeBtn.AutoSize = false;
+            this.activeBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activeBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_play_96;
+            this.activeBtn.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.activeBtn.Location = new System.Drawing.Point(12, 12);
+            this.activeBtn.Name = "activeBtn";
+            this.activeBtn.Size = new System.Drawing.Size(296, 34);
+            this.activeBtn.TabIndex = 3;
+            this.activeBtn.TabStop = false;
+            this.activeBtn.Text = "Start the program after logging in";
+            this.activeBtn.ThemeName = "Fluent";
+            this.activeBtn.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.radRadioButton1_ToggleStateChanged);
+            // 
+            // deactiveBtn
+            // 
+            this.deactiveBtn.AutoSize = false;
+            this.deactiveBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deactiveBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_pause_96;
+            this.deactiveBtn.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.deactiveBtn.Location = new System.Drawing.Point(12, 52);
+            this.deactiveBtn.Name = "deactiveBtn";
+            this.deactiveBtn.Size = new System.Drawing.Size(296, 34);
+            this.deactiveBtn.TabIndex = 4;
+            this.deactiveBtn.TabStop = false;
+            this.deactiveBtn.Text = "The program does not start after login";
+            this.deactiveBtn.ThemeName = "Fluent";
+            this.deactiveBtn.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.radRadioButton2_ToggleStateChanged);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 223);
+            this.ClientSize = new System.Drawing.Size(320, 223);
+            this.Controls.Add(this.deactiveBtn);
+            this.Controls.Add(this.activeBtn);
             this.Controls.Add(this.bootStatus);
-            this.Controls.Add(this.radButton2);
-            this.Controls.Add(this.radButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -90,8 +94,8 @@
             this.ThemeName = "Fluent";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deactiveBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,10 +103,9 @@
         }
 
         #endregion
-
-        private Telerik.WinControls.UI.RadButton radButton1;
-        private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.Themes.FluentTheme fluentTheme1;
         private System.Windows.Forms.Label bootStatus;
+        private Telerik.WinControls.UI.RadRadioButton activeBtn;
+        private Telerik.WinControls.UI.RadRadioButton deactiveBtn;
     }
 }
