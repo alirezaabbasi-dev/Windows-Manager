@@ -79,6 +79,8 @@
       <HintPath>..\lib\RCWF\2023.1.117.40\Telerik.WinControls.RichTextEditor.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Crystal, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.CrystalDark, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.Themes.Fluent, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2023.1.117.40\Telerik.WinControls.Themes.Fluent.dll</HintPath>
       <Private>True</Private>
@@ -87,6 +89,10 @@
       <HintPath>..\lib\RCWF\2023.1.117.40\Telerik.WinControls.Themes.FluentDark.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Material, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.MaterialBlueGrey, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2019, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2023.1.117.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2023.1.117.40\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
       <Private>True</Private>
@@ -260,7 +266,6 @@
     <Content Include="icons8-system-task-96.ico" />
     <None Include="Resources\icons8-moon-96.ico" />
     <None Include="Resources\icons8-hibernate-96.ico" />
-    <None Include="Resources\icons8-hibernate-96.png" />
     <None Include="Resources\icons8-cleaner-32.png" />
     <None Include="Resources\icons8-cd-96.ico" />
     <None Include="Resources\icons8-system-task-96.png" />

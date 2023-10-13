@@ -58,14 +58,13 @@ namespace YP_Windows_Manager_Computer_
                     if (appsUseLightTheme == 0)
                     {
                         // Apply dark mode styles
-                        this.ThemeName = fluentDarkTheme2.ThemeName;
-                        shutdownBtn.ThemeName = fluentDarkTheme2.ThemeName;
                         this.ThemeName = fluentDarkTheme1.ThemeName;
+
                         Panel1.BackColor = colour;
                         Panel3.BackColor = colour;
                         Panel4.BackColor = colour;
                         Panel2.BackColor = colour;
-                        printersList.ThemeName = fluentDarkTheme1.ThemeName;
+
                         bChargeInfo.ForeColor = Color.White;
                         bChargeInfo.BackColor = colour;
                         //panels backcolor
@@ -113,16 +112,38 @@ namespace YP_Windows_Manager_Computer_
                         aboutBtn.ForeColor = L_mode_colour;
                         hibernate_btn.ForeColor = L_mode_colour;
                         sleep_btn.ForeColor = L_mode_colour;
+                        //Dark Mode for all elements
+                        Panel1.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel3.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel4.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel2.ThemeName = fluentDarkTheme1.ThemeName;
+
+                        restartBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        singoutBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        logcancellBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        openDVDBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        disconnect_dial_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        emptyRecycleBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        insProgBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        appStnBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        WEB_TXT_INPUT.ThemeName = fluentDarkTheme1.ThemeName;
+                        HomePage_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        OpenWeb_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        refreshBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        sysInfoBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        checkHealthBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        aboutBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        hibernate_btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        sleep_btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        shutdownBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        printersList.ThemeName = fluentDarkTheme1.ThemeName;
+                        cleanTmpBtn.ThemeName = fluentDarkTheme1.ThemeName;
                     }
                     else
                     {
                         // Apply light mode styles
                         this.ThemeName = fluentTheme1.ThemeName;
-                        Panel1.ThemeName = fluentTheme1.ThemeName;
-                        Panel3.ThemeName = fluentTheme1.ThemeName;
-                        Panel4.ThemeName = fluentTheme1.ThemeName;
-                        Panel2.ThemeName = fluentTheme1.ThemeName;
-                        printersList.ThemeName = fluentTheme1.ThemeName;
+
                         bChargeInfo.ForeColor = colour;
                         bChargeInfo.BackColor = L_mode_colour1;
                         //panels backcolor
@@ -170,6 +191,32 @@ namespace YP_Windows_Manager_Computer_
                         aboutBtn.ForeColor = colour;
                         hibernate_btn.ForeColor = colour;
                         sleep_btn.ForeColor = colour;
+                        //Light Mode for all elements
+                        Panel1.ThemeName = fluentTheme1.ThemeName;
+                        Panel3.ThemeName = fluentTheme1.ThemeName;
+                        Panel4.ThemeName = fluentTheme1.ThemeName;
+                        Panel2.ThemeName = fluentTheme1.ThemeName;
+
+                        restartBtn.ThemeName = fluentTheme1.ThemeName;
+                        singoutBtn.ThemeName = fluentTheme1.ThemeName;
+                        logcancellBtn.ThemeName = fluentTheme1.ThemeName;
+                        openDVDBtn.ThemeName = fluentTheme1.ThemeName;
+                        disconnect_dial_Btn.ThemeName = fluentTheme1.ThemeName;
+                        emptyRecycleBtn.ThemeName = fluentTheme1.ThemeName;
+                        insProgBtn.ThemeName = fluentTheme1.ThemeName;
+                        appStnBtn.ThemeName = fluentTheme1.ThemeName;
+                        WEB_TXT_INPUT.ThemeName = fluentTheme1.ThemeName;
+                        HomePage_Btn.ThemeName = fluentTheme1.ThemeName;
+                        OpenWeb_Btn.ThemeName = fluentTheme1.ThemeName;
+                        refreshBtn.ThemeName = fluentTheme1.ThemeName;
+                        sysInfoBtn.ThemeName = fluentTheme1.ThemeName;
+                        checkHealthBtn.ThemeName = fluentTheme1.ThemeName;
+                        aboutBtn.ThemeName = fluentTheme1.ThemeName;
+                        hibernate_btn.ThemeName = fluentTheme1.ThemeName;
+                        sleep_btn.ThemeName = fluentTheme1.ThemeName;
+                        shutdownBtn.ThemeName = fluentTheme1.ThemeName;
+                        cleanTmpBtn.ThemeName = fluentTheme1.ThemeName;
+                        printersList.ThemeName = fluentTheme1.ThemeName;
                     }
                 }
                 //WM
@@ -270,6 +317,7 @@ namespace YP_Windows_Manager_Computer_
 
         private void refreshBtn_Click(object sender, EventArgs e)
         {
+           
             this.Refresh();
         }
         private void GetInstalledPrinters()
@@ -318,7 +366,185 @@ namespace YP_Windows_Manager_Computer_
         PowerStatus power = SystemInformation.PowerStatus;
         private void Timer1_Tick(object sender, EventArgs e)
         {
+            Color colour = ColorTranslator.FromHtml("#212121");
+            Color L_mode_colour = ColorTranslator.FromHtml("242, 242, 242");
+            Color L_mode_colour1 = ColorTranslator.FromHtml("204, 204, 204");
 
+            // Read the registry key to determine the current theme
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"))
+            {
+                if (key != null)
+                {
+                    // Get the value of "AppsUseLightTheme" (0 = Dark Mode enabled, 1 = Light Mode enabled)
+                    int appsUseLightTheme = (int)key.GetValue("AppsUseLightTheme", 1);
+
+                    // Check if dark mode is enabled
+                    if (appsUseLightTheme == 0)
+                    {
+                        // Apply dark mode styles
+                        this.ThemeName = fluentDarkTheme1.ThemeName;
+
+                        Panel1.BackColor = colour;
+                        Panel3.BackColor = colour;
+                        Panel4.BackColor = colour;
+                        Panel2.BackColor = colour;
+
+                        bChargeInfo.ForeColor = Color.White;
+                        bChargeInfo.BackColor = colour;
+                        //panels backcolor
+                        Panel1.BackColor = Color.Black;
+                        Panel2.BackColor = Color.Black;
+                        Panel3.BackColor = Color.Black;
+                        Panel4.BackColor = Color.Black;
+                        //all btn backcolor
+                        shutdownBtn.BackColor = colour;
+                        restartBtn.BackColor = colour;
+                        singoutBtn.BackColor = colour;
+                        logcancellBtn.BackColor = colour;
+                        openDVDBtn.BackColor = colour;
+                        disconnect_dial_Btn.BackColor = colour;
+                        emptyRecycleBtn.BackColor = colour;
+                        insProgBtn.BackColor = colour;
+                        appStnBtn.BackColor = colour;
+                        cleanTmpBtn.BackColor = colour;
+                        WEB_TXT_INPUT.BackColor = colour;
+                        HomePage_Btn.BackColor = colour;
+                        OpenWeb_Btn.BackColor = colour;
+                        refreshBtn.BackColor = colour;
+                        sysInfoBtn.BackColor = colour;
+                        checkHealthBtn.BackColor = colour;
+                        aboutBtn.BackColor = colour;
+                        hibernate_btn.BackColor = colour;
+                        sleep_btn.BackColor = colour;
+                        //all btn forecolor
+                        shutdownBtn.ForeColor = L_mode_colour;
+                        restartBtn.ForeColor = L_mode_colour;
+                        singoutBtn.ForeColor = L_mode_colour;
+                        logcancellBtn.ForeColor = L_mode_colour;
+                        openDVDBtn.ForeColor = L_mode_colour;
+                        disconnect_dial_Btn.ForeColor = L_mode_colour;
+                        emptyRecycleBtn.ForeColor = L_mode_colour;
+                        insProgBtn.ForeColor = L_mode_colour;
+                        appStnBtn.ForeColor = L_mode_colour;
+                        cleanTmpBtn.ForeColor = L_mode_colour;
+                        WEB_TXT_INPUT.ForeColor = L_mode_colour;
+                        HomePage_Btn.ForeColor = L_mode_colour;
+                        OpenWeb_Btn.ForeColor = L_mode_colour;
+                        refreshBtn.ForeColor = L_mode_colour;
+                        sysInfoBtn.ForeColor = L_mode_colour;
+                        checkHealthBtn.ForeColor = L_mode_colour;
+                        aboutBtn.ForeColor = L_mode_colour;
+                        hibernate_btn.ForeColor = L_mode_colour;
+                        sleep_btn.ForeColor = L_mode_colour;
+                        //Dark Mode for all elements
+                        Panel1.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel3.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel4.ThemeName = fluentDarkTheme1.ThemeName;
+                        Panel2.ThemeName = fluentDarkTheme1.ThemeName;
+
+                        restartBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        singoutBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        logcancellBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        openDVDBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        disconnect_dial_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        emptyRecycleBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        insProgBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        appStnBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        WEB_TXT_INPUT.ThemeName = fluentDarkTheme1.ThemeName;
+                        HomePage_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        OpenWeb_Btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        refreshBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        sysInfoBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        checkHealthBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        aboutBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        hibernate_btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        sleep_btn.ThemeName = fluentDarkTheme1.ThemeName;
+                        shutdownBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                        printersList.ThemeName = fluentDarkTheme1.ThemeName;
+                        cleanTmpBtn.ThemeName = fluentDarkTheme1.ThemeName;
+                    }
+                    else
+                    {
+                        // Apply light mode styles
+                        this.ThemeName = fluentTheme1.ThemeName;
+
+                        bChargeInfo.ForeColor = colour;
+                        bChargeInfo.BackColor = L_mode_colour1;
+                        //panels backcolor
+                        Panel1.BackColor = L_mode_colour1;
+                        Panel2.BackColor = L_mode_colour1;
+                        Panel3.BackColor = L_mode_colour1;
+                        Panel4.BackColor = L_mode_colour1;
+                        //all btn backcolor
+                        shutdownBtn.BackColor = L_mode_colour;
+                        restartBtn.BackColor = L_mode_colour;
+                        singoutBtn.BackColor = L_mode_colour;
+                        logcancellBtn.BackColor = L_mode_colour;
+                        openDVDBtn.BackColor = L_mode_colour;
+                        disconnect_dial_Btn.BackColor = L_mode_colour;
+                        emptyRecycleBtn.BackColor = L_mode_colour;
+                        insProgBtn.BackColor = L_mode_colour;
+                        appStnBtn.BackColor = L_mode_colour;
+                        cleanTmpBtn.BackColor = L_mode_colour;
+                        WEB_TXT_INPUT.BackColor = L_mode_colour;
+                        HomePage_Btn.BackColor = L_mode_colour;
+                        OpenWeb_Btn.BackColor = L_mode_colour;
+                        refreshBtn.BackColor = L_mode_colour;
+                        sysInfoBtn.BackColor = L_mode_colour;
+                        checkHealthBtn.BackColor = L_mode_colour;
+                        aboutBtn.BackColor = L_mode_colour;
+                        hibernate_btn.BackColor = L_mode_colour;
+                        sleep_btn.BackColor = L_mode_colour;
+                        //all btn forecolor
+                        shutdownBtn.ForeColor = colour;
+                        restartBtn.ForeColor = colour;
+                        singoutBtn.ForeColor = colour;
+                        logcancellBtn.ForeColor = colour;
+                        openDVDBtn.ForeColor = colour;
+                        disconnect_dial_Btn.ForeColor = colour;
+                        emptyRecycleBtn.ForeColor = colour;
+                        insProgBtn.ForeColor = colour;
+                        appStnBtn.ForeColor = colour;
+                        cleanTmpBtn.ForeColor = colour;
+                        WEB_TXT_INPUT.ForeColor = colour;
+                        HomePage_Btn.ForeColor = colour;
+                        OpenWeb_Btn.ForeColor = colour;
+                        refreshBtn.ForeColor = colour;
+                        sysInfoBtn.ForeColor = colour;
+                        checkHealthBtn.ForeColor = colour;
+                        aboutBtn.ForeColor = colour;
+                        hibernate_btn.ForeColor = colour;
+                        sleep_btn.ForeColor = colour;
+                        //Light Mode for all elements
+                        Panel1.ThemeName = fluentTheme1.ThemeName;
+                        Panel3.ThemeName = fluentTheme1.ThemeName;
+                        Panel4.ThemeName = fluentTheme1.ThemeName;
+                        Panel2.ThemeName = fluentTheme1.ThemeName;
+
+                        restartBtn.ThemeName = fluentTheme1.ThemeName;
+                        singoutBtn.ThemeName = fluentTheme1.ThemeName;
+                        logcancellBtn.ThemeName = fluentTheme1.ThemeName;
+                        openDVDBtn.ThemeName = fluentTheme1.ThemeName;
+                        disconnect_dial_Btn.ThemeName = fluentTheme1.ThemeName;
+                        emptyRecycleBtn.ThemeName = fluentTheme1.ThemeName;
+                        insProgBtn.ThemeName = fluentTheme1.ThemeName;
+                        appStnBtn.ThemeName = fluentTheme1.ThemeName;
+                        WEB_TXT_INPUT.ThemeName = fluentTheme1.ThemeName;
+                        HomePage_Btn.ThemeName = fluentTheme1.ThemeName;
+                        OpenWeb_Btn.ThemeName = fluentTheme1.ThemeName;
+                        refreshBtn.ThemeName = fluentTheme1.ThemeName;
+                        sysInfoBtn.ThemeName = fluentTheme1.ThemeName;
+                        checkHealthBtn.ThemeName = fluentTheme1.ThemeName;
+                        aboutBtn.ThemeName = fluentTheme1.ThemeName;
+                        hibernate_btn.ThemeName = fluentTheme1.ThemeName;
+                        sleep_btn.ThemeName = fluentTheme1.ThemeName;
+                        shutdownBtn.ThemeName = fluentTheme1.ThemeName;
+                        cleanTmpBtn.ThemeName = fluentTheme1.ThemeName;
+                        printersList.ThemeName = fluentTheme1.ThemeName;
+                    }
+                }
+            }
+                this.Refresh();
         }
         private String Getvalue;
         private void Button1_Click(object sender, EventArgs e)

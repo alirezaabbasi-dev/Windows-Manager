@@ -59,3 +59,9 @@ C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Teler
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.UI.xml
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.Windows.Documents.Core.xml
 C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.Windows.Zip.xml
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Crystal.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.CrystalDark.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.HighContrastBlack.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Material.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.MaterialBlueGrey.dll
+C:\Users\Acer\Desktop\Windows-Manager\YP Windows Manager(Laptop)\bin\Debug\Telerik.WinControls.Themes.Office2019.dll
