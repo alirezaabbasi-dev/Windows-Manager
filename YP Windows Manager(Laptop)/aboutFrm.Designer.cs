@@ -73,8 +73,8 @@
             this.aboutTxt.ReadOnly = true;
             this.aboutTxt.Size = new System.Drawing.Size(369, 285);
             this.aboutTxt.TabIndex = 3;
-            this.aboutTxt.Text = "Application Name: YP Windows Manager\n\nApplication Version: 3.0.0 (Beta)\n\nCompany " +
-    "Name: YP(You Pc)\n\nDeveloper: Alireza Abbasi\n\nApplication Icons: icons8";
+            this.aboutTxt.Text = "Application Name: YP Windows Manager\n\nBrand Name: YP(You Pc)\n\nApplication Version" +
+    ": 3.0.0 (Beta)\n\nDeveloper: Alireza Abbasi\n\nApplication Icons: icons8";
             // 
             // txtColor__Btn
             // 

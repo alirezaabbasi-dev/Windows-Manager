@@ -45,10 +45,10 @@
             this.OpenWeb_Btn = new Telerik.WinControls.UI.RadButton();
             this.HomePage_Btn = new Telerik.WinControls.UI.RadButton();
             this.Panel4 = new Telerik.WinControls.UI.RadPanel();
-            this.refreshBtn = new Telerik.WinControls.UI.RadButton();
             this.checkHealthBtn = new Telerik.WinControls.UI.RadButton();
             this.aboutBtn = new Telerik.WinControls.UI.RadButton();
             this.sysInfoBtn = new Telerik.WinControls.UI.RadButton();
+            this.refreshBtn = new Telerik.WinControls.UI.RadButton();
             this.Panel2 = new Telerik.WinControls.UI.RadPanel();
             this.cleanTmpBtn = new Telerik.WinControls.UI.RadButton();
             this.printersList = new Telerik.WinControls.UI.RadListView();
@@ -75,10 +75,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.HomePage_Btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel4)).BeginInit();
             this.Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel2)).BeginInit();
             this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).BeginInit();
@@ -150,7 +150,7 @@
             // bChargeInfo
             // 
             this.bChargeInfo.AutoSize = true;
-            this.bChargeInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.bChargeInfo.BackColor = System.Drawing.Color.Transparent;
             this.bChargeInfo.Location = new System.Drawing.Point(17, 153);
             this.bChargeInfo.Name = "bChargeInfo";
             this.bChargeInfo.Size = new System.Drawing.Size(35, 13);
@@ -270,22 +270,6 @@
             this.Panel4.Size = new System.Drawing.Size(420, 139);
             this.Panel4.TabIndex = 0;
             // 
-            // refreshBtn
-            // 
-            this.refreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.refreshBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.refreshBtn.ForeColor = System.Drawing.Color.Black;
-            this.refreshBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
-            this.refreshBtn.Location = new System.Drawing.Point(25, 14);
-            this.refreshBtn.Name = "refreshBtn";
-            this.refreshBtn.Size = new System.Drawing.Size(182, 52);
-            this.refreshBtn.TabIndex = 0;
-            this.refreshBtn.Text = "Refresh";
-            this.toolTip1.SetToolTip(this.refreshBtn, "Refresh");
-            this.refreshBtn.Visible = false;
-            this.refreshBtn.Click += new System.EventHandler(this.refreshBtn_Click);
-            // 
             // checkHealthBtn
             // 
             this.checkHealthBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -328,6 +312,22 @@
             this.sysInfoBtn.Text = "System Information";
             this.toolTip1.SetToolTip(this.sysInfoBtn, "System Information");
             this.sysInfoBtn.Click += new System.EventHandler(this.sysInfoBtn_Click);
+            // 
+            // refreshBtn
+            // 
+            this.refreshBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.refreshBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.refreshBtn.ForeColor = System.Drawing.Color.Black;
+            this.refreshBtn.Image = global::YP_Windows_Manager.Properties.Resources.icons8_refresh_96;
+            this.refreshBtn.Location = new System.Drawing.Point(25, 14);
+            this.refreshBtn.Name = "refreshBtn";
+            this.refreshBtn.Size = new System.Drawing.Size(182, 52);
+            this.refreshBtn.TabIndex = 0;
+            this.refreshBtn.Text = "Refresh";
+            this.toolTip1.SetToolTip(this.refreshBtn, "Refresh");
+            this.refreshBtn.Visible = false;
+            this.refreshBtn.Click += new System.EventHandler(this.refreshBtn_Click);
             // 
             // Panel2
             // 
@@ -488,10 +488,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.HomePage_Btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel4)).EndInit();
             this.Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkHealthBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aboutBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sysInfoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Panel2)).EndInit();
             this.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cleanTmpBtn)).EndInit();

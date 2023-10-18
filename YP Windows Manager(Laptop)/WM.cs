@@ -242,8 +242,13 @@ namespace YP_Windows_Manager_Computer_
 
         private void singoutBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("ShutDown", "/l /t 10");
-            HelpButton.ToString();
+            RadMessageBox.ThemeName = this.ThemeName;
+            DialogResult result = Telerik.WinControls.RadMessageBox.Show("Do you want to put the system in LogOut mode?", "LogOut", MessageBoxButtons.YesNo, RadMessageIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("ShutDown", "/l /t 10");
+            }
         }
 
         private void restartBtn_Click(object sender, EventArgs e)
