@@ -467,7 +467,7 @@
             this.Name = "WM";
             this.Opacity = 0.99D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YP Windows Manager (beta)";
+            this.Text = "YP Windows Manager";
             this.ThemeName = "HighContrastBlack";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);

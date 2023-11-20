@@ -26,6 +26,7 @@ namespace YP_Windows_Manager_Computer_
         {
             InitializeComponent();
             this.Load += Form1_Load;
+
         }
         private bool CheckForDVDDrive()
         {
@@ -322,7 +323,7 @@ namespace YP_Windows_Manager_Computer_
 
         private void refreshBtn_Click(object sender, EventArgs e)
         {
-           
+
             this.Refresh();
         }
         private void GetInstalledPrinters()
@@ -549,7 +550,7 @@ namespace YP_Windows_Manager_Computer_
                     }
                 }
             }
-                this.Refresh();
+            this.Refresh();
         }
         private String Getvalue;
         private void Button1_Click(object sender, EventArgs e)
